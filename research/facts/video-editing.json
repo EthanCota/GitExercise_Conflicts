@@ -1,0 +1,194 @@
+[
+  {
+    "fact": "M5 Ultra ProRes hardware accelerators: 4 encode engines, 4 decode engines",
+    "value": "4x ProRes encode + 4x ProRes decode engines in Media Engine",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra simultaneous 8K ProRes playback capability",
+    "value": "33 concurrent streams of 8K ProRes 422 at 30fps",
+    "chip": "M5 Ultra",
+    "source_url": "https://9to5mac.com/2026/08/25/apple-unveils-next-generation-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Max ProRes hardware accelerators: 2 encode engines, 2 decode engines",
+    "value": "2x ProRes encode + 2x ProRes decode engines",
+    "chip": "M5 Max",
+    "source_url": "https://9to5mac.com/2026/08/25/apple-unveils-next-generation-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra memory bandwidth specification",
+    "value": "1.2TB/s (50% more than M3 Ultra)",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M3 Ultra simultaneous 8K ProRes playback capability",
+    "value": "24 concurrent streams of 8K ProRes 422",
+    "chip": "M3 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/",
+    "source_date": "2025-03-01",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max simultaneous 8K ProRes playback capability",
+    "value": "18 concurrent streams of 8K ProRes",
+    "chip": "M4 Max",
+    "source_url": "https://support.apple.com/en-us/121553",
+    "source_date": "2024-10-01",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 Ultra GPU graphics performance improvement over M3 Ultra",
+    "value": "1.8x faster graphics rendering",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra real-time video grading capability (Apple claim)",
+    "value": "Can color-grade uncompressed 8K footage in real time",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "8K RAW video storage bandwidth requirements",
+    "value": "Exceeds 400MB/s sustained throughput",
+    "chip": "storage_requirement",
+    "source_url": "https://larryjordan.com/articles/the-brave-new-world-of-8k-media/",
+    "source_date": "2024-06-01",
+    "confidence": "high"
+  },
+  {
+    "fact": "Thunderbolt 5 theoretical maximum bandwidth",
+    "value": "80Gbps bidirectional (120Gbps boost mode), ~7,500 MB/sec practical",
+    "chip": "thunderbolt_5",
+    "source_url": "https://plugable.com/blogs/news/what-is-thunderbolt-5-architecture-speed-and-whether-you-actually-need-it",
+    "source_date": "2024-06-01",
+    "confidence": "high"
+  },
+  {
+    "fact": "Thunderbolt 5 external SSD real-world performance (LaCie Rugged SSD Pro5)",
+    "value": "6,700 MB/s sustained read, sufficient for real-time 6K/8K editing",
+    "chip": "thunderbolt_5",
+    "source_url": "https://americas.lexar.com/thunderbolt-3-vs-usb-3-2/",
+    "source_date": "2024-06-01",
+    "confidence": "medium"
+  },
+  {
+    "fact": "8K production storage capacity recommendation",
+    "value": "12-24TB minimum, 2-3x raw footage size for rendering/proxies/backups",
+    "chip": "storage_planning",
+    "source_url": "https://www.seagate.com/blog/best-hard-drives-for-video-editing/",
+    "source_date": "2024-06-01",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 Ultra interconnect bandwidth improvement",
+    "value": "4.4TB/s (vs M3 Ultra 2.5TB/s), 6x connection density of M3 Ultra",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.macrumors.com/2026/08/25/apple-debuts-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra GPU Core Count",
+    "value": "80-core GPU with Neural Accelerators in each core",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Max GPU core count and Metal performance vs M4 Max",
+    "value": "40-core GPU, Metal score ~195,000 (34% improvement over M4 Max ~145,000)",
+    "chip": "M5 Max",
+    "source_url": "https://medium.com/@kellyshephard/m5-vs-m5-pro-vs-m5-max-6928eb06f823",
+    "source_date": "2026-01-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "DaVinci Resolve: RTX 5090 vs M4 Max GPU performance",
+    "value": "RTX 5090 34.72% faster overall, 149% faster in GPU effects; M4 Max still competitive for unified-memory workflows",
+    "chip": "M4 Max",
+    "source_url": "https://hostbor.com/rtx-5090-vs-apple-m4-max/",
+    "source_date": "2026-01-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 generation GPU render performance improvement over M4",
+    "value": "Up to 30% faster graphics performance, up to 45% improvement in ray-traced applications",
+    "chip": "M5",
+    "source_url": "https://medium.com/@kellyshephard/m5-vs-m4-pro-d1dde6002a0d",
+    "source_date": "2026-01-15",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Pro 15-minute 8K ProRes Raw export time",
+    "value": "9 minutes 10 seconds export time",
+    "chip": "M4 Pro",
+    "source_url": "https://kodjoarts.com/mac-mini-m4-pro-review-a-video-editor-s-30-day-speed-test-results",
+    "source_date": "2025-06-01",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 MacBook 10-minute 8K ProRes export time improvement",
+    "value": "22% faster than M4 equivalent with 32GB RAM",
+    "chip": "M5",
+    "source_url": "https://medium.com/@kellyshephard/m5-vs-m4-pro-d1dde6002a0d",
+    "source_date": "2026-01-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M3 Ultra Blender GPU render benchmark (145 frames)",
+    "value": "26:08 (37% faster than M4 Max at 35:51)",
+    "chip": "M3 Ultra",
+    "source_url": "https://hostbor.com/mac-studio-m3-ultra-tested/",
+    "source_date": "2025-03-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "DaVinci Resolve 9 streams 8K ProRes playback benchmark",
+    "value": "9 streams of 8K ProRes at full 24fps in DaVinci Resolve 17.4.1",
+    "chip": "M3 Ultra (implied)",
+    "source_url": "https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=217757",
+    "source_date": "2024-01-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 Max availability and pricing",
+    "value": "Starting at $2,499 USD, available for pre-order Aug 25 2026, delivery Sept 22 2026",
+    "chip": "M5 Max",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra availability and pricing",
+    "value": "Starting at $5,499 USD, available for pre-order Aug 25 2026, delivery Sept 22 2026",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra maximum unified memory configuration",
+    "value": "Up to 512GB unified memory with 1.2TB/s bandwidth",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  }
+]

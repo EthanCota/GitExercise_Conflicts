@@ -1,0 +1,274 @@
+[
+  {
+    "fact": "PostgreSQL ARM64 performance advantage",
+    "value": "29% higher throughput at 29% lower cost vs x86",
+    "chip": "ARM64 (AWS Graviton context)",
+    "source_url": "https://aws.amazon.com/blogs/database/leveling-up-amazon-rds-with-aws-graviton4-benchmarks/",
+    "source_date": "2026-08-28 (accessed)",
+    "confidence": "high"
+  },
+  {
+    "fact": "AWS Graviton4 vs Graviton3 performance",
+    "value": "40% performance improvement on PostgreSQL workloads",
+    "chip": "ARM64 (AWS Graviton4)",
+    "source_url": "https://aws.amazon.com/blogs/database/leveling-up-amazon-rds-with-aws-graviton4-benchmarks/",
+    "source_date": "2026-08-28 (accessed)",
+    "confidence": "high"
+  },
+  {
+    "fact": "PostgreSQL pgbench on Mac Studio M4 Max",
+    "value": "456K TPS with proper ventilation",
+    "chip": "M4 Max",
+    "source_url": "https://x.com/crunchydata/status/1970591910650859957",
+    "source_date": "2026-08-28 (accessed)",
+    "confidence": "medium"
+  },
+  {
+    "fact": "PostgreSQL pgbench on MacBook M4 Max (thermal limited)",
+    "value": "317K TPS (thermally constrained mobile form factor)",
+    "chip": "M4 Max",
+    "source_url": "https://x.com/crunchydata/status/1970591910650859957",
+    "source_date": "2026-08-28 (accessed)",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M3 Ultra CPU core configuration",
+    "value": "28 to 32 cores (performance + efficiency cores)",
+    "chip": "M3 Ultra",
+    "source_url": "https://everymac.com/systems/apple/mac-studio/specs/mac-studio-m3-ultra-28-core-cpu-60-core-gpu-2025-specs.html",
+    "source_date": "2025 (M3 generation)",
+    "confidence": "high"
+  },
+  {
+    "fact": "M3 Ultra memory bandwidth",
+    "value": "819GB/s unified memory bandwidth",
+    "chip": "M3 Ultra",
+    "source_url": "https://www.techrepublic.com/article/news-apple-mac-studio-cheat-sheet/",
+    "source_date": "2025",
+    "confidence": "high"
+  },
+  {
+    "fact": "M3 Ultra maximum unified memory",
+    "value": "512GB unified memory (configurable)",
+    "chip": "M3 Ultra",
+    "source_url": "https://everymac.com/systems/apple/mac-studio/specs/mac-studio-m3-ultra-32-core-cpu-80-core-gpu-2025-specs.html",
+    "source_date": "2025",
+    "confidence": "high"
+  },
+  {
+    "fact": "M3 Ultra thermal output at full load",
+    "value": "921 BTU/hr (270W) at maximum load",
+    "chip": "M3 Ultra 32-core",
+    "source_url": "https://support.apple.com/en-us/102027",
+    "source_date": "2025",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max CPU core count",
+    "value": "10 to 16 cores (12 performance + 4 efficiency at max)",
+    "chip": "M4 Max",
+    "source_url": "https://www.tweaktown.com/news/101412/apple-details-its-m4-pro-max-chips-has-up-to-16-cpu-cores-128gb-unified-memory/index.html",
+    "source_date": "2024-10",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max memory bandwidth",
+    "value": "546GB/s (16-core config); 410GB/s (14-core config)",
+    "chip": "M4 Max",
+    "source_url": "https://www.tweaktown.com/news/101412/apple-details-its-m4-pro-max-chips-has-up-to-16-cpu-cores-128gb-unified-memory/index.html",
+    "source_date": "2024-10",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max maximum unified memory",
+    "value": "128GB unified memory (top configuration)",
+    "chip": "M4 Max",
+    "source_url": "https://support.apple.com/en-us/121553",
+    "source_date": "2024-10",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra CPU core count (announced)",
+    "value": "36-core CPU",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra memory bandwidth",
+    "value": "1.2TB/s unified memory bandwidth",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra maximum unified memory",
+    "value": "512GB unified memory (configurable)",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra SSD performance improvement",
+    "value": "Up to 2x faster than M3 Ultra with PCIe Gen 6",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio M5 availability",
+    "value": "Ships September 22, 2026 (512GB configs: late October)",
+    "chip": "M5 Ultra/Max",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "DuckDB GPU acceleration on M4 Max TPC-H SF100",
+    "value": "9.9x speedup (DuckDB CPU 99ms → GPU 10ms on lineitem SUM query)",
+    "chip": "M4 Max",
+    "source_url": "https://github.com/sadopc/unified-db-2",
+    "source_date": "2026",
+    "confidence": "high"
+  },
+  {
+    "fact": "DuckDB GPU acceleration hash joins M4 Max",
+    "value": "11.7x speedup (429ms → 37ms on inner join + SUM)",
+    "chip": "M4 Max",
+    "source_url": "https://github.com/sadopc/unified-db-2",
+    "source_date": "2026",
+    "confidence": "high"
+  },
+  {
+    "fact": "DuckDB GPU-showcase query (QX) at SF10 M4",
+    "value": "16.97x faster with MLX GPU (1970ms CPU → 116ms GPU)",
+    "chip": "M4",
+    "source_url": "https://github.com/sadopc/unified-db-2",
+    "source_date": "2026",
+    "confidence": "high"
+  },
+  {
+    "fact": "ClickHouse native ARM64 support status",
+    "value": "Full native support with precompiled macOS Aarch64 binaries",
+    "chip": "ARM64 (Apple Silicon)",
+    "source_url": "https://clickhouse.com/support/platforms",
+    "source_date": "2023-11 (official support established)",
+    "confidence": "high"
+  },
+  {
+    "fact": "Mac Studio M3 Ultra SSD sequential read (4TB)",
+    "value": "~7000MB/s sequential read",
+    "chip": "M3 Ultra",
+    "source_url": "https://hostbor.com/mac-studio-m3-ultra-tested/",
+    "source_date": "2025",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio M3 Ultra SSD random I/O (2TB)",
+    "value": "400-450MB/s RND4K QD64 random read",
+    "chip": "M3 Ultra",
+    "source_url": "https://forums.macrumors.com/threads/m3-ultra-only-400mb-s-rnd4k-qd64-on-2tb-ssd-normal.2455621/",
+    "source_date": "2025",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio M4 Max SSD throughput (1TB)",
+    "value": "6449MB/s read; 6487MB/s write",
+    "chip": "M4 Max",
+    "source_url": "https://forums.macrumors.com/threads/mac-studio-m4-max-and-ssd-drive-speed.2453068/",
+    "source_date": "2026",
+    "confidence": "medium"
+  },
+  {
+    "fact": "OrbStack container volume I/O performance",
+    "value": "1566MB/s sequential write (256MB); 10,061MB/s read; 130.2 Gbps C2C throughput",
+    "chip": "Apple Silicon (M3 tested)",
+    "source_url": "https://github.com/zot24/macos-container-benchmarks",
+    "source_date": "2026",
+    "confidence": "high"
+  },
+  {
+    "fact": "OrbStack vs pnpm install performance",
+    "value": "88% of native speed (substantial I/O advantage over Docker Desktop)",
+    "chip": "Apple Silicon",
+    "source_url": "https://github.com/zot24/macos-container-benchmarks",
+    "source_date": "2026",
+    "confidence": "high"
+  },
+  {
+    "fact": "Docker Desktop vs OrbStack volume performance",
+    "value": "OrbStack read throughput 14% better than Docker in recent macOS versions",
+    "chip": "Apple Silicon",
+    "source_url": "https://github.com/zot24/macos-container-benchmarks",
+    "source_date": "2026",
+    "confidence": "high"
+  },
+  {
+    "fact": "Colima container startup speed",
+    "value": "0.291s (fastest of Docker alternatives on Apple Silicon)",
+    "chip": "Apple Silicon (M3 tested)",
+    "source_url": "https://github.com/zot24/macos-container-benchmarks",
+    "source_date": "2026",
+    "confidence": "high"
+  },
+  {
+    "fact": "Rosetta 2 x86 emulation overhead",
+    "value": "20-22% performance penalty vs native ARM64",
+    "chip": "All Apple Silicon",
+    "source_url": "https://mjtsai.com/blog/2020/11/16/performance-of-rosetta-2-on-apple-m1/",
+    "source_date": "2020 (M1 generation, consistent across M-series)",
+    "confidence": "high"
+  },
+  {
+    "fact": "UTM ARM64 Linux VM performance",
+    "value": "Near-native performance via Apple Hypervisor framework",
+    "chip": "All Apple Silicon",
+    "source_url": "https://mac.getutm.app/",
+    "source_date": "2026",
+    "confidence": "high"
+  },
+  {
+    "fact": "macOS ECC RAM support",
+    "value": "No ECC RAM support (non-ECC only); incompatible with 24/7 database servers",
+    "chip": "All Mac hardware",
+    "source_url": "https://www.kingston.com/en/blog/servers-and-data-centers/what-is-ecc-memory-ssd-enterprise",
+    "source_date": "2026 (current standard)",
+    "confidence": "high"
+  },
+  {
+    "fact": "MySQL ARM64 scaling characteristics",
+    "value": "ARM scales better than x86 with same core count (lighter thread overhead)",
+    "chip": "ARM64 (general)",
+    "source_url": "https://mysqlonarm.github.io/Why-run-mysql-on-arm-part3/",
+    "source_date": "2024+",
+    "confidence": "medium"
+  },
+  {
+    "fact": "MySQL Percona 5.7 single-node performance 2026",
+    "value": "842 TPS on 512 threads (single host)",
+    "chip": "Unspecified (Percona 2026 report)",
+    "source_url": "https://www.percona.com/blog/2026-mysql-ecosystem-performance-benchmark-report/",
+    "source_date": "2026",
+    "confidence": "medium"
+  },
+  {
+    "fact": "PostgreSQL M1 MacBook compatibility",
+    "value": "Successfully compiled and ran on M1; achieved 'great' performance",
+    "chip": "M1",
+    "source_url": "https://blog.crunchydata.com/blog/postgresql-benchmarks-apple-arm-m1-macbook-pro-2020",
+    "source_date": "2020",
+    "confidence": "high"
+  },
+  {
+    "fact": "macOS launchd service management",
+    "value": "launchd daemon with KeepAlive support for 24/7 service running",
+    "chip": "macOS (all)",
+    "source_url": "https://www.howtogeek.com/319048/what-is-launchd-and-why-is-it-running-on-my-mac/",
+    "source_date": "2026",
+    "confidence": "high"
+  }
+]

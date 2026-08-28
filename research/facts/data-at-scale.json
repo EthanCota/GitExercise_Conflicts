@@ -1,0 +1,282 @@
+[
+  {
+    "fact": "M5 Ultra memory bandwidth specification",
+    "value": "1.2 TB/s (1200 GB/s)",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M3 Ultra memory bandwidth specification",
+    "value": "819 GB/s (over 800 GB/s)",
+    "chip": "M3 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/",
+    "source_date": "2025-03-05",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max memory bandwidth (40-core GPU configuration)",
+    "value": "546 GB/s",
+    "chip": "M4 Max",
+    "source_url": "https://www.apple.com/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/",
+    "source_date": "2024-10-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Max memory bandwidth (40-core GPU configuration)",
+    "value": "614 GB/s",
+    "chip": "M5 Max",
+    "source_url": "https://www.apple.com/mac-studio/specs/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra CPU core count",
+    "value": "36-core CPU (12 super cores + 24 performance cores)",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M3 Ultra CPU core count",
+    "value": "32-core CPU (24 performance + 4 efficiency cores)",
+    "chip": "M3 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/",
+    "source_date": "2025-03-05",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra max unified memory configuration",
+    "value": "512 GB",
+    "chip": "M5 Ultra",
+    "source_url": "https://fstoppers.com/gear/apples-new-mac-studio-gets-m5-ultra-512-gb-memory-and-thunderbolt-5-904270",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M3 Ultra max unified memory configuration",
+    "value": "512 GB",
+    "chip": "M3 Ultra",
+    "source_url": "https://www.tomshardware.com/desktops/apple-debuts-m3-ultra-in-refreshed-mac-studio-with-up-to-512gb-memory",
+    "source_date": "2025-03-05",
+    "confidence": "high"
+  },
+  {
+    "fact": "Mac Studio M3 Ultra internal SSD sequential read/write with 8TB capacity",
+    "value": "6302 MB/s (peak)",
+    "chip": "M3 Ultra",
+    "source_url": "https://www.owc.com/solutions/studiostack",
+    "source_date": "2025-06-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio M4 Max 2TB SSD sequential read/write",
+    "value": "6000 MB/s",
+    "chip": "M4 Max",
+    "source_url": "https://forums.macrumors.com/threads/mac-studio-m4-max-and-ssd-drive-speed.2453068/",
+    "source_date": "2024-11-30",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio M4 Max 1TB SSD sequential read/write",
+    "value": "4500 MB/s",
+    "chip": "M4 Max",
+    "source_url": "https://forums.macrumors.com/threads/mac-studio-m4-max-and-ssd-drive-speed.2453068/",
+    "source_date": "2024-11-30",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio M4 Max 512GB SSD sequential read/write",
+    "value": "3000 MB/s",
+    "chip": "M4 Max",
+    "source_url": "https://forums.macrumors.com/threads/mac-studio-m4-max-and-ssd-drive-speed.2453068/",
+    "source_date": "2024-11-30",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio built-in 10 Gigabit Ethernet real-world throughput",
+    "value": "~9 Gbps (up to 10 Gbps theoretical)",
+    "chip": "M3 Ultra, M4 Max, M5 Ultra, M5 Max",
+    "source_url": "https://ithy.com/article/mac-studio-networking-optimization-cjqs06i7",
+    "source_date": "2025-04-20",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Thunderbolt 5 maximum bandwidth",
+    "value": "80 Gbps (bi-directional)",
+    "chip": "M3 Ultra, M4 Max, M5 Ultra, M5 Max",
+    "source_url": "https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/",
+    "source_date": "2025-03-05",
+    "confidence": "high"
+  },
+  {
+    "fact": "Thunderbolt 5 RDMA (Remote Direct Memory Access) data throughput and latency",
+    "value": "80 Gbps with 3-9 microsecond latency",
+    "chip": "M3 Ultra, M4 Max, M5 Ultra, M5 Max",
+    "source_url": "https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5/",
+    "source_date": "2025-12-20",
+    "confidence": "high"
+  },
+  {
+    "fact": "DuckDB TPC-H SF=1000 query completion time",
+    "value": "121 seconds",
+    "chip": "Multi-platform (not Apple-specific)",
+    "source_url": "https://duckdb.org/2025/10/09/benchmark-results-14-lts",
+    "source_date": "2025-10-09",
+    "confidence": "high"
+  },
+  {
+    "fact": "DuckDB TPC-H SF=100 query completion time",
+    "value": "10.7 seconds",
+    "chip": "Multi-platform (not Apple-specific)",
+    "source_url": "https://duckdb.org/2025/10/09/benchmark-results-14-lts",
+    "source_date": "2025-10-09",
+    "confidence": "high"
+  },
+  {
+    "fact": "Polars group-by aggregation on 100M rows completion time",
+    "value": "23 seconds",
+    "chip": "Multi-platform (not Apple-specific)",
+    "source_url": "https://medium.com/@2nick2patel2/we-benchmarked-pandas-vs-polars-vs-duckdb-jaw-dropping-results-29fb05809424",
+    "source_date": "2025-05-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "DuckDB group-by aggregation on 100M rows completion time",
+    "value": "31 seconds",
+    "chip": "Multi-platform (not Apple-specific)",
+    "source_url": "https://medium.com/@2nick2patel2/we-benchmarked-pandas-vs-polars-vs-duckdb-jaw-dropping-results-29fb05809424",
+    "source_date": "2025-05-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Apache DataFusion ClickBench Parquet (14GB) performance rank",
+    "value": "Fastest single-node engine (as of November 2024)",
+    "chip": "Multi-platform (c6a.4xlarge measured)",
+    "source_url": "https://datafusion.apache.org/blog/2024/11/18/datafusion-fastest-single-node-parquet-clickbench/",
+    "source_date": "2024-11-18",
+    "confidence": "high"
+  },
+  {
+    "fact": "DuckDB large-scale TPC-H dataset (SF=100000) processing capability",
+    "value": "27 TB final database size, all 22 queries completed using larger-than-memory processing",
+    "chip": "Multi-platform (not Apple-specific)",
+    "source_url": "https://duckdb.org/2025/10/09/benchmark-results-14-lts",
+    "source_date": "2025-10-09",
+    "confidence": "medium"
+  },
+  {
+    "fact": "DuckDB memory efficiency on 140GB dataset (2GB-140GB range)",
+    "value": "Peak ~1.3 GB memory usage",
+    "chip": "Multi-platform (32GB machine tested)",
+    "source_url": "https://www.codecentric.de/en/knowledge-hub/blog/duckdb-vs-polars-performance-and-memory-with-massive-parquet-data",
+    "source_date": "2025-03-20",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Polars memory usage on 140GB dataset",
+    "value": "~17 GB peak memory usage",
+    "chip": "Multi-platform (32GB machine tested)",
+    "source_url": "https://www.codecentric.de/en/knowledge-hub/blog/duckdb-vs-polars-performance-and-memory-with-massive-parquet-data",
+    "source_date": "2025-03-20",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Single-node analytics viable dataset size threshold (2024-2025 consensus)",
+    "value": "Up to ~1 TB for single high-memory nodes, replaces Spark clusters",
+    "chip": "Multi-platform",
+    "source_url": "https://www.pracdata.io/p/the-rise-of-single-node-processing",
+    "source_date": "2025-06-10",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Apple Silicon SIMD acceleration (NEON) speedup on analytics workloads",
+    "value": "1.2x to 4.3x speedup in practical benchmarks",
+    "chip": "M4",
+    "source_url": "https://dev.to/erioharrison/rust-simd-benchmark-stdsimd-vs-neon-on-apple-m4-47jd",
+    "source_date": "2025-10-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 Ultra vs M3 Ultra CPU performance improvement",
+    "value": "1.3x faster CPU performance (Apple claim)",
+    "chip": "M5 Ultra vs M3 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra memory bandwidth improvement vs M3 Ultra",
+    "value": "50% increase (1.2 TB/s vs 819 GB/s)",
+    "chip": "M5 Ultra vs M3 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra inter-die bandwidth via UltraFusion",
+    "value": "Over 4.4 TB/s with 6x increase in connection density",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max unified memory capacity",
+    "value": "Up to 128 GB",
+    "chip": "M4 Max",
+    "source_url": "https://www.apple.com/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/",
+    "source_date": "2024-10-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Max unified memory capacity",
+    "value": "Up to 128 GB",
+    "chip": "M5 Max",
+    "source_url": "https://www.apple.com/newsroom/2026/03/apple-debuts-m5-pro-and-m5-max-to-supercharge-the-most-demanding-pro-workflows/",
+    "source_date": "2026-03-15",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max memory bandwidth comparison to AI PC chips",
+    "value": "4x bandwidth of latest AI PC chip; 4.5x higher than base M4",
+    "chip": "M4 Max vs M4",
+    "source_url": "https://www.tweaktown.com/news/101412/apple-details-its-m4-pro-max-chips-has-up-to-16-cpu-cores-128gb-unified-memory/index.html",
+    "source_date": "2024-10-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "DuckDB performance advantage on 1TB+ datasets vs Polars",
+    "value": "DuckDB outperforms Polars in-memory engine at 1TB scale",
+    "chip": "Multi-platform",
+    "source_url": "https://www.confessionsofadataguy.com/duckdb-beats-polars-for-1tb-of-data/",
+    "source_date": "2025-12-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 Ultra shipping date",
+    "value": "September 22, 2026 (base configs); late October 2026 (512GB configs)",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "Pinterest 2024 Hadoop-to-Spark migration cost reduction",
+    "value": "80%+ cost reduction after migrating off long-running EMR clusters",
+    "chip": "Multi-platform cluster",
+    "source_url": "https://tech-insider.org/spark-vs-hadoop-2026/",
+    "source_date": "2024-12-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "DataFusion speedup vs Spark under memory constraints",
+    "value": "2x faster than Spark when Spark constrained to 1GB; Spark needs 3GB to outperform DataFusion",
+    "chip": "Multi-platform",
+    "source_url": "https://medium.com/@andymadson/apache-datafusion-what-data-engineers-need-to-know-in-2026-3ad96f7157f6",
+    "source_date": "2026-01-20",
+    "confidence": "medium"
+  }
+]

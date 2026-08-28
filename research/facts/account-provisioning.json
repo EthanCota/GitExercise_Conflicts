@@ -1,0 +1,203 @@
+[
+  {
+    "fact": "Keycloak base memory requirement",
+    "value": "1250 MB RAM for Pod including caches and 10,000 sessions",
+    "source_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_keycloak/26.0/html/high_availability_guide/concepts-memory-and-cpu-sizing-",
+    "source_date": "2026-08",
+    "confidence": "high",
+    "notes": "RedHat official documentation for Keycloak 26.0"
+  },
+  {
+    "fact": "Keycloak session memory scaling",
+    "value": "500 MB per 100,000 active user sessions in 3-node cluster",
+    "source_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_keycloak/26.0/html/high_availability_guide/concepts-memory-and-cpu-sizing-",
+    "source_date": "2026-08",
+    "confidence": "high",
+    "notes": "Tested up to 200,000 sessions. Per-Pod memory addition."
+  },
+  {
+    "fact": "Keycloak CPU scaling - password-based logins",
+    "value": "1 vCPU per 15 password-based user logins per second (tested up to 300/sec)",
+    "source_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_keycloak/26.0/html/high_availability_guide/concepts-memory-and-cpu-sizing-",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Keycloak CPU scaling - client credentials",
+    "value": "1 vCPU per 120 client credential grants per second (tested up to 2000/sec)",
+    "source_url": "https://docs.redhat.com/en/documentation/red_hat_build_of_keycloak/26.0/html/high_availability_guide/concepts-memory-and-cpu-sizing-",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Authelia memory footprint",
+    "value": "20-25 MB RAM during normal operation",
+    "source_url": "https://github.com/authelia/authelia/discussions/6048",
+    "source_date": "2026-08",
+    "confidence": "high",
+    "notes": "Single lightweight Go binary"
+  },
+  {
+    "fact": "Authelia CPU requirements",
+    "value": "1 vCPU sufficient for most cases; <1% idle, <5% under load",
+    "source_url": "https://github.com/authelia/authelia/discussions/6048",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Authelia ARM64 support",
+    "value": "Runs on Raspberry Pi with minimal resource footprint",
+    "source_url": "https://selfhosting.sh/compare/authelia-vs-authentik/",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Authentik resource efficiency vs Keycloak",
+    "value": "Lighter than Keycloak; ships as smaller stack with faster boot time",
+    "source_url": "https://blog.elest.io/authentik-vs-authelia-vs-keycloak-choosing-the-right-self-hosted-identity-provider-in-2026/",
+    "source_date": "2026-08",
+    "confidence": "medium",
+    "notes": "No specific metrics provided in comparison"
+  },
+  {
+    "fact": "Authentik minimum deployment specs",
+    "value": "2GB+ VPS with Postgres and Redis",
+    "source_url": "https://blog.elest.io/authentik-vs-authelia-vs-keycloak-choosing-the-right-self-hosted-identity-provider-in-2026/",
+    "source_date": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "fact": "FreeIPA ARM64 minimum memory",
+    "value": "2 GB RAM (CA-full), 1 GB RAM (CA-less or replica without CA)",
+    "source_url": "https://www.freeipa.org/page/ARM",
+    "source_date": "2026-08",
+    "confidence": "medium",
+    "notes": "No scaling information provided; ARM performance can be slow with SDcard storage"
+  },
+  {
+    "fact": "FreeIPA ARM startup time",
+    "value": "CA startup can take 10+ minutes on ARM SoCs with slow storage",
+    "source_url": "https://www.freeipa.org/page/ARM",
+    "source_date": "2026-08",
+    "confidence": "medium",
+    "notes": "SDcard-based disks common on ARM platforms"
+  },
+  {
+    "fact": "Terraform default parallelism",
+    "value": "10 concurrent resource operations by default",
+    "source_url": "https://oneuptime.com/blog/post/2026-02-23-how-to-use-parallelism-flag-for-faster-applies/view",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Pulumi default parallelism",
+    "value": "Unlimited concurrency by default (configurable via --parallel)",
+    "source_url": "https://tech-insider.org/pulumi-vs-terraform-2026/",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "IaC bottleneck for apply operations",
+    "value": "Cloud provider API rate limits, not tool engine performance",
+    "source_url": "https://tech-insider.org/pulumi-vs-terraform-2026/",
+    "source_date": "2026-08",
+    "confidence": "high",
+    "notes": "Applies to both Terraform and Pulumi"
+  },
+  {
+    "fact": "OpenTofu default parallelism and rate limiting",
+    "value": "10 resources concurrent by default; API rate limits impose bottleneck",
+    "source_url": "https://oneuptime.com/blog/post/2026-03-20-fix-api-rate-limiting-opentofu/view",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "AWS STS API rate limit",
+    "value": "600 requests/sec per account per region for credential APIs",
+    "source_url": "https://oneuptime.com/blog/post/2026-03-20-fix-api-rate-limiting-opentofu/view",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Ansible default forks (parallelism)",
+    "value": "5 parallel processes by default",
+    "source_url": "https://www.ansiblebyexample.com/articles/ansible-forks-parallel-execution-and-performance",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Ansible recommended forks for different workloads",
+    "value": "50-100 for lightweight read-only tasks; 15-30 for I/O-heavy operations",
+    "source_url": "https://cyberpanel.net/blog/ansible-forks-guide-2026",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "PostgreSQL bulk insert performance (optimized)",
+    "value": "394,477 rows per second with parameter optimization",
+    "source_url": "https://balkrishan-nagpal.medium.com/postgres-how-i-improved-data-insertion-speed-by-a-factor-of-more-than-1000x-1a968e736e86",
+    "source_date": "2026-08",
+    "confidence": "medium",
+    "notes": "Represents 1000x improvement from baseline; requires COPY and transaction optimization"
+  },
+  {
+    "fact": "PostgreSQL bulk insert typical performance",
+    "value": "Tens of thousands of rows per second for bulk loads of narrow tables",
+    "source_url": "https://www.cybertec-postgresql.com/en/bulk-loading-huge-amounts-of-data/",
+    "source_date": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Synthetic test data generation scale",
+    "value": "Millions to billions of rows in minutes with multi-threaded partition engines",
+    "source_url": "https://www.genrocket.com/synthetic-data-generation/",
+    "source_date": "2026-08",
+    "confidence": "medium",
+    "notes": "GenRocket tool; specific rates vary by hardware and implementation"
+  },
+  {
+    "fact": "Docker container density on 128GB machine",
+    "value": "100-200+ containers easily; theoretical maximum 400-500+ for simple workloads",
+    "source_url": "https://oneuptime.com/blog/post/2026-01-16-containers-vs-vms-density-efficiency-comparison/view",
+    "source_date": "2026-08",
+    "confidence": "medium",
+    "notes": "Depends on per-container resource requirements; typical container uses 50-500MB"
+  },
+  {
+    "fact": "Kubernetes pod limit per node",
+    "value": "110 pods recommended standard; 250 pods on major managed services with proper configuration",
+    "source_url": "https://www.plural.sh/blog/how-many-pods-per-node/",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Kubernetes single node with 128GB RAM practical pod density",
+    "value": "Limited by 110-250 pod ceiling rather than memory on 128GB node",
+    "source_url": "https://www.plural.sh/blog/how-many-pods-per-node/",
+    "source_date": "2026-08",
+    "confidence": "medium",
+    "notes": "Assumes reasonably-sized workloads; CIDR block can limit to 256 pods max"
+  },
+  {
+    "fact": "Podman on Apple Silicon (ARM64) container support",
+    "source_url": "https://medium.com/rahasak/switching-from-docker-desktop-to-podman-on-macos-m1-m2-arm64-cpu-7752c02453ec",
+    "value": "Podman M1/M2 leverages native ARM64 containerization without VM overhead",
+    "source_date": "2026-08",
+    "confidence": "high"
+  },
+  {
+    "fact": "Docker vs Podman performance on Apple Silicon",
+    "value": "Docker currently tops Podman on performance for certain workloads; Rosetta translation layer available",
+    "source_url": "https://medium.com/@guillem.riera/the-most-performant-docker-setup-on-macos-apple-silicon-m1-m2-m3-for-x64-amd64-compatibility-da5100e2557d",
+    "source_date": "2026-08",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Pulumi performance vs Terraform for resource creation",
+    "value": "3.17x speedup (300%) observed in parallel SNS/SQS creation benchmark",
+    "source_url": "https://www.pulumi.com/blog/benchmarking-python-performance/",
+    "source_date": "2026-08",
+    "confidence": "medium",
+    "notes": "Single benchmark test; performance parity at scale when API-limited"
+  }
+]

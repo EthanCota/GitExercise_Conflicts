@@ -1,0 +1,212 @@
+[
+  {
+    "category": "headless_browser_concurrency",
+    "fact": "Single Playwright browser handles 5-10 parallel pages before performance degradation; per-tab memory 50-150MB depending on page complexity",
+    "value": "5-10 pages/browser, 50-150MB/tab",
+    "chip": "M5-generation (test hardware not specified in source)",
+    "source_url": "https://www.firecrawl.dev/blog/playwright-vs-puppeteer",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "Derived from Playwright vs Puppeteer 2026 benchmark"
+  },
+  {
+    "category": "headless_browser_concurrency",
+    "fact": "Running 100-200 concurrent Playwright workers requires approximately 20GB memory (200MB per worker baseline)",
+    "value": "200MB/worker, 20GB for 100 workers",
+    "chip": "M5-generation (not specified)",
+    "source_url": "https://github.com/microsoft/playwright/issues/38683",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "From Playwright GitHub issue on high concurrency memory usage"
+  },
+  {
+    "category": "headless_browser_concurrency",
+    "fact": "16GB machine can comfortably run 20-30 concurrent browser instances with resource blocking enabled",
+    "value": "20-30 instances/16GB",
+    "chip": "M5-generation (general recommendation, not chip-specific)",
+    "source_url": "https://medium.com/@zlata_18516/headless-chrome-at-scale-cpu-ram-and-cost-optimization-strategies-caea743245c4",
+    "source_date": "2026-06-28",
+    "confidence": "medium",
+    "notes": "Production practice from ProxyEmpire June 2026 article"
+  },
+  {
+    "category": "macOS_process_limits",
+    "fact": "Default macOS file descriptor limit is 256; maximum configurable limit on macOS is 12,288",
+    "value": "default=256, max=12288",
+    "chip": "M5-generation (macOS-wide limit, not chip-specific)",
+    "source_url": "https://wilsonmar.github.io/maximum-limits/",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "Applies to all macOS versions including Monterey, Ventura, Sequoia"
+  },
+  {
+    "category": "http_throughput_async",
+    "fact": "asyncio 3.13 + aiohttp 3.10 achieves 12,400 req/s throughput, representing 41% improvement over synchronous requests",
+    "value": "12400 req/s",
+    "chip": "M5-generation (benchmark hardware not specified)",
+    "source_url": "https://dev.to/johalputt/how-to-implement-async-python-with-asyncio-313-and-aiohttp-310-for-41-higher-throughput-10j1",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "Recent 2026 benchmark comparing sync vs async Python"
+  },
+  {
+    "category": "http_throughput_compiled_languages",
+    "fact": "Rust Axum achieves 180,000-307,000 requests/sec in 2025-2026 benchmarks; Go Fiber/Gin achieves 40,000-180,000 req/s depending on test conditions",
+    "value": "Rust: 180k-307k req/s, Go: 40k-180k req/s",
+    "chip": "M5-generation (benchmarks not ARM64-specific)",
+    "source_url": "https://tech-insider.org/rust-vs-go-2026/",
+    "source_date": "2026-08-28",
+    "confidence": "medium",
+    "notes": "Multiple 2025-2026 benchmarks show Rust typically 1.3-1.5x faster than Go"
+  },
+  {
+    "category": "single_machine_crawler",
+    "fact": "Practical single-machine crawler with 40 workers collected approximately 100,000 items in 15 minutes (~111 items/sec)",
+    "value": "~111 items/sec or 40 workers",
+    "chip": "M5-generation (not specified in source)",
+    "source_url": "https://medium.com/@tonywangcn/how-to-build-a-scaleable-crawler-to-crawl-million-pages-with-a-single-machine-in-just-2-hours-ab3e238d1c22",
+    "source_date": "2026-08-28",
+    "confidence": "medium",
+    "notes": "Production crawler implementation example; actual throughput depends on page complexity"
+  },
+  {
+    "category": "http_throughput_single_machine",
+    "fact": "Botify web crawler achieves >200 pages per second; typical single-node HTTP services handle 500-5000 requests/second",
+    "value": ">200 pages/sec (Botify), 500-5000 req/s (typical services)",
+    "chip": "M5-generation (not chip-specific)",
+    "source_url": "https://www.botify.com/blog/crawler-impact-performance",
+    "source_date": "2026-08-28",
+    "confidence": "medium",
+    "notes": "Range reflects variation in server hardware and application design"
+  },
+  {
+    "category": "storage_ingest",
+    "fact": "DuckDB writes Parquet files 4-15x faster than SQLite; Parquet export faster than writing to in-memory Pandas DataFrame",
+    "value": "4-15x faster than SQLite",
+    "chip": "M5-generation (database performance not chip-specific)",
+    "source_url": "https://www.getgalaxy.io/learn/glossary/duckdb-vs-sqlite-benchmarks",
+    "source_date": "2026-08-28",
+    "confidence": "medium",
+    "notes": "DuckDB 1.3.0+ with improved multithreaded export; caveat: 10+ GB data shows DuckDB slower than Arrow"
+  },
+  {
+    "category": "storage_ingest",
+    "fact": "Parquet write performance in DuckDB 1.3.0+ includes multithreaded exports and rowgroup merging; scales well to 10GB, degrades on larger datasets vs Arrow",
+    "value": "Multithreaded, scales <10GB efficiently",
+    "chip": "M5-generation (storage format, not chip-specific)",
+    "source_url": "https://motherduck.com/blog/announcing-duckdb-13-on-motherduck-cdw/",
+    "source_date": "2026-08-28",
+    "confidence": "medium",
+    "notes": "Performance improvements released June 2026"
+  },
+  {
+    "category": "arm64_tooling_python",
+    "fact": "Native ARM64 Python on Apple Silicon outperforms x86_64 via Rosetta 2 by 1.78-1.98x; Rosetta 2 penalty typical 20-30%, can exceed 50% for CPU-heavy workloads",
+    "value": "1.78-1.98x faster native, 20-50% Rosetta 2 penalty",
+    "chip": "M1+ (all Apple Silicon)",
+    "source_url": "https://pushtoprod.substack.com/p/making-python-2x-faster-on-apple-silicon",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "Applies to M5 Gen; recommends native ARM64 Python for scraping workloads"
+  },
+  {
+    "category": "arm64_tooling_ecosystem",
+    "fact": "curl-cffi (HTTP library with SSL bypass capabilities) available for ARM64 macOS; scrapy issues with ARM64 resolved in recent versions",
+    "value": "curl-cffi native ARM64 support",
+    "chip": "M1+ (all Apple Silicon)",
+    "source_url": "https://pypi.org/project/curl-cffi/",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "Key tool for advanced scraping; fully ARM64-native on macOS"
+  },
+  {
+    "category": "arm64_macos_support",
+    "fact": "macOS Tahoe (Sept 15, 2025) is final version supporting Intel processors; all subsequent versions ARM64-only",
+    "value": "macOS Tahoe final Intel version",
+    "chip": "M5-generation (supersedes Intel on new Macs)",
+    "source_url": "https://en.wikipedia.org/wiki/MacOS_Tahoe",
+    "source_date": "2025-09-15",
+    "confidence": "high",
+    "notes": "Ecosystem pressure toward ARM64-native tooling accelerating"
+  },
+  {
+    "category": "mac_studio_specs",
+    "fact": "Mac Studio M5 Ultra: 36-core CPU, 80-core GPU, up to 512GB unified memory, 1.2TB/s memory bandwidth, 1.3x multithreaded performance vs M3 Ultra",
+    "value": "36-core CPU, 512GB RAM, 1.2TB/s BW",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high",
+    "notes": "Official Apple announcement; ships Sept 22 2026"
+  },
+  {
+    "category": "mac_studio_specs",
+    "fact": "Mac Studio M5 Max: 18-core CPU, 40-core GPU, up to 128GB unified memory; M5 Ultra can handle 33 simultaneous 8K ProRes 422 @ 30fps video streams",
+    "value": "18-core CPU, 128GB RAM max (M5 Max)",
+    "chip": "M5 Max",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high",
+    "notes": "Video streaming capacity indicates sustained I/O throughput capability"
+  },
+  {
+    "category": "single_vs_distributed",
+    "fact": "Single-node crawlers achieve 60-500 pages/min; distributed systems with coordinated work queues achieve 50,000+ requests/second",
+    "value": "single: 60-500 pages/min, distributed: 50k+ req/s",
+    "chip": "M5-generation (architecture-agnostic comparison)",
+    "source_url": "https://www.firecrawl.dev/glossary/web-crawling-apis/what-is-distributed-web-crawling",
+    "source_date": "2026-08-28",
+    "confidence": "medium",
+    "notes": "Distributed advantage is throughput; single-node better for low-latency, privacy-sensitive work"
+  },
+  {
+    "category": "single_vs_distributed",
+    "fact": "Distributed crawlers provide IP diversity for anti-ban resilience; bandwidth savings from distribution are minimal (per Nutch FAQ)",
+    "value": "IP diversity >> bandwidth savings",
+    "chip": "M5-generation (architecture-agnostic)",
+    "source_url": "https://brightdata.com/blog/web-data/distributed-web-crawling",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "Single M5 Ultra can sustain crawl via polite rate-limiting; distributed mainly for evasion/diversity"
+  },
+  {
+    "category": "async_concurrency_limits",
+    "fact": "asyncio/aiohttp can handle 1000 concurrent connections on single machine using asyncio.Semaphore(); aiohttp 3.10 adds per-host connection pool sharding for reduced lock contention",
+    "value": "1000 concurrent conn with semaphore",
+    "chip": "M5-generation (not chip-specific)",
+    "source_url": "https://medium.com/@kogilaanirudh/unleashing-the-power-of-asyncio-aiohttp-making-1-million-http-requests-using-python-c0338cdf9871",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "Requires explicit semaphore; system FD limit is bottleneck without workaround"
+  },
+  {
+    "category": "playwright_concurrency",
+    "fact": "Playwright has built-in parallel test execution with fullyParallel flag; can spawn independent workers each with own browser instance; each worker ~200MB baseline",
+    "value": "200MB per worker baseline",
+    "chip": "M5-generation (not tested on M5 in sources)",
+    "source_url": "https://www.browserstack.com/guide/playwright-parallel-test",
+    "source_date": "2026-08-28",
+    "confidence": "high",
+    "notes": "Puppeteer lacks native concurrency; requires workaround"
+  },
+  {
+    "category": "residential_proxy_throughput",
+    "fact": "Residential proxy datacenter plans: 200-1000 Mbps typical throughput; premium ISP proxies: 1Gbps+ possible; some plans support 50,000 concurrent connections",
+    "value": "200-1000 Mbps (datacenter), 1Gbps+ (ISP), 50k conns",
+    "chip": "M5-generation (network-external constraint)",
+    "source_url": "https://plainproxies.com/product/unlimited-residential",
+    "source_date": "2026-08-28",
+    "confidence": "medium",
+    "notes": "Speed throttling after soft usage limits common; port restrictions cap concurrency"
+  },
+  {
+    "category": "browser_automation_scaling",
+    "fact": "WebKit (Safari engine) uses roughly 60% less CPU than Chromium for equivalent browser automation workloads on Apple Silicon",
+    "value": "60% less CPU (WebKit vs Chromium)",
+    "chip": "M1+ (all Apple Silicon)",
+    "source_url": "https://www.firecrawl.dev/blog/playwright-vs-puppeteer",
+    "source_date": "2026-08-28",
+    "confidence": "medium",
+    "notes": "Suggests Playwright+Safari for CPU-efficient high-concurrency crawling; not all sites support WebKit"
+  }
+]

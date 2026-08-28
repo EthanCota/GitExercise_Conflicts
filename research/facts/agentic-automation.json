@@ -1,0 +1,282 @@
+[
+  {
+    "fact": "M5 Max CPU cores and unified memory",
+    "value": "18-core CPU, up to 128GB unified memory, up to 40-core GPU",
+    "chip": "M5 Max",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra CPU cores and unified memory",
+    "value": "36-core CPU, up to 512GB unified memory, up to 80-core GPU",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Max memory bandwidth",
+    "value": "614 GB/s unified memory bandwidth",
+    "chip": "M5 Max",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra memory bandwidth",
+    "value": "1.2 TB/s memory bandwidth (50% more than M3 Ultra)",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Max token generation performance on larger models",
+    "value": "18-28 tokens per second; 30-35 tok/s for 70B Q4 models",
+    "chip": "M5 Max",
+    "source_url": "https://www.promptquorum.com/local-llms/m5-pro-max-llm-benchmarks-2026/",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 Max token generation for 7B model",
+    "value": "350-450 tok/s prefill for 4K prompts; 95-110 tok/s generation",
+    "chip": "M5 Max",
+    "source_url": "https://www.promptquorum.com/local-llms/m5-pro-max-llm-benchmarks-2026/",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 Ultra token generation performance",
+    "value": "42-52 tokens per second for Llama 3.3 70B Instruct at 32K context; 2x faster than M5 Max projected",
+    "chip": "M5 Ultra",
+    "source_url": "https://contracollective.com/blog/m5-ultra-local-ai-inference-mlx-2026/",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Ollama MLX decode performance improvement on M5",
+    "value": "93% improvement: decode rate from 57.8 to 111.4 tokens per second",
+    "chip": "M5",
+    "source_url": "https://dev.to/alanwest/ollama-just-got-93-faster-on-mac-heres-how-to-enable-it-3gce",
+    "source_date": "2026-03-31",
+    "confidence": "high"
+  },
+  {
+    "fact": "Ollama MLX M5 Max prefill and decode performance",
+    "value": "Prefill 1,851 tok/s (int4 quantization), decode 134 tok/s with Qwen3.5-35B-A3B",
+    "chip": "M5 Max",
+    "source_url": "https://dev.to/alanwest/ollama-just-got-93-faster-on-mac-heres-how-to-enable-it-3gce",
+    "source_date": "2026-03-31",
+    "confidence": "high"
+  },
+  {
+    "fact": "Claude Code session memory footprint per session",
+    "value": "150-200MB at idle; 300-500MB accumulated with context",
+    "chip": "Apple Silicon (general)",
+    "source_url": "https://dev.to/amitrix/how-many-claude-code-sessions-can-and-should-you-run-simultaneously-72k",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Claude Code concurrent agent workflow limits",
+    "value": "16 concurrent agents maximum; 1,000 agents total per run; capped at min(16, cpu_cores - 2)",
+    "chip": "Apple Silicon (general)",
+    "source_url": "https://dev.to/amitrix/how-many-claude-code-sessions-can-and-should-you-run-simultaneously-72k",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "Apple Silicon macOS VM limit",
+    "value": "Maximum 2 active macOS virtual machines on any Apple Silicon host",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://eclecticlight.co/2023/09/14/current-limitations-on-macos-virtual-machines-running-on-apple-silicon-macs/",
+    "source_date": "2023-09-14",
+    "confidence": "high"
+  },
+  {
+    "fact": "Docker containers vs VM workaround on Apple Silicon",
+    "value": "Docker can run dozens of isolated environments alongside 2 VMs, bypassing VM limit",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://eclecticlight.co/2023/09/14/current-limitations-on-macos-virtual-machines-running-on-apple-silicon-macs/",
+    "source_date": "2023-09-14",
+    "confidence": "high"
+  },
+  {
+    "fact": "Mac Studio Ultra idle power draw",
+    "value": "Approximately 18W at idle (M1 Ultra baseline)",
+    "chip": "M5 Ultra (similar thermal architecture to M1 Ultra)",
+    "source_url": "https://forums.macrumors.com/threads/mac-studio-power-consumption.2338426/page-2",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio maximum continuous power draw",
+    "value": "370W maximum continuous power consumption",
+    "chip": "M5 Ultra",
+    "source_url": "https://support.apple.com/en-us/102027",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "Mac Studio 24/7 continuous operation feasibility",
+    "value": "Verified safe for continuous operation; users report years of 24/7 operation with no issues since 2022",
+    "chip": "M5 (applies to all Mac Studio generations)",
+    "source_url": "https://forums.macrumors.com/threads/any-harm-in-keeping-studio-powered-on-24-7.2379567/",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "Apple Silicon memory bandwidth as primary LLM inference bottleneck",
+    "value": "Memory bandwidth, not compute or VRAM, is the primary bottleneck; performance scales linearly with memory bandwidth for dense models",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://blog.starmorph.com/blog/apple-silicon-llm-inference-optimization-guide/",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "MLX time-to-first-token improvement over M4",
+    "value": "3.33x to 4.06x faster TTFT than M4 on 1.7B-14B and GPT OSS 20B models",
+    "chip": "M5",
+    "source_url": "https://machinelearning.apple.com/research/exploring-llms-mlx-m5",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "MLX 14B model time-to-first-token on MacBook Pro",
+    "value": "Dense 14B model drops under 10 seconds TTFT on 24GB M5 MacBook Pro",
+    "chip": "M5",
+    "source_url": "https://machinelearning.apple.com/research/exploring-llms-mlx-m5",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Prefix caching time-to-first-token improvement on local Mac",
+    "value": "TTFT reduction from 22 seconds to 0.19 seconds with prefix caching; SSD-backed cache achieves 1-3 second TTFT",
+    "chip": "Apple Silicon (general)",
+    "source_url": "https://www.roborhythms.com/reduce-local-llm-ttft-mac-studio/",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Agent loop token consumption per task",
+    "value": "Single agentic task consumes 50,000 to 500,000 tokens across dozens of inference calls",
+    "chip": "Apple Silicon (general)",
+    "source_url": "https://arxiv.org/pdf/2604.12301",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Time-to-first-token user perception threshold",
+    "value": "90th percentile of responses should not exceed 5 seconds for acceptable UX; 500ms median TTFT is practical design target for real-time interaction",
+    "chip": "Apple Silicon (general)",
+    "source_url": "https://arxiv.org/pdf/2606.09613",
+    "source_date": "2026-06-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "GitHub Actions concurrent runners on single machine",
+    "value": "Can install and run 6 concurrent runners on single Mac by using separate directories and registration",
+    "chip": "M5 Max/Ultra",
+    "source_url": "https://medium.com/@eliassalom/how-to-run-multiple-github-actions-in-parallel-ae853b8d49f2",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Mac Studio typical build concurrency settings",
+    "value": "Xcode recommends 5 concurrent jobs for MacPro, 6-8 for MacBookPro/iMac; M5 Ultra 36-core CPU supports higher parallelism",
+    "chip": "M5 Ultra",
+    "source_url": "https://developer.apple.com/videos/play/wwdc2022/110364/",
+    "source_date": "2022-06-01",
+    "confidence": "medium"
+  },
+  {
+    "fact": "OrbStack performance vs Docker Desktop on Apple Silicon",
+    "value": "OrbStack 31% faster startup, +37% networking throughput, +29% build speed vs Docker Desktop",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://github.com/zot24/macos-container-benchmarks",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "Docker for Mac connection limits",
+    "value": "Connection issues reported after approximately 145 services when running 6 containers; too many connections errors can occur",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://github.com/docker/for-mac/issues/1009",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "OrbStack dynamic memory allocation vs Docker Desktop",
+    "value": "OrbStack uses dynamic allocation (containers take needed memory); Docker Desktop pre-allocates fixed RAM, locking unused memory away",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://sumguy.com/colima-vs-orbstack-vs-docker-desktop-on-mac/",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "MLX prefill performance limitation",
+    "value": "MLX full prefill before token emission means TTFT rises linearly with input length; on MoE models, BaseRT achieves 1.81x faster prefill than MLX",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://huggingface.co/blog/basecompute/basert-release/",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "Mac Studio thermal management",
+    "value": "Better heatsink in 2026 model improves thermal performance under heavy loads; system manages fan scaling based on ambient temperature",
+    "chip": "M5 Max/Ultra",
+    "source_url": "https://www.macworld.com/article/2973459/2026-mac-studio-m5-release-date-specs-price-rumors.html",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "Mac Studio M5 release and shipping date",
+    "value": "Announced August 25, 2026; shipping September 22, 2026",
+    "chip": "M5 Max/Ultra",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "Mac Studio M5 starting price",
+    "value": "Starting at USD $2,499",
+    "chip": "M5 Max",
+    "source_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "Mac Studio next-generation SSD architecture",
+    "value": "PCIe Gen 6 with up to 2x faster performance than previous generation",
+    "chip": "M5 Max/Ultra",
+    "source_url": "https://www.macworld.com/article/2973459/2026-mac-studio-m5-release-date-specs-price-rumors.html",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  },
+  {
+    "fact": "Claude Code practical session limit on 16GB machine",
+    "value": "2 concurrent sessions recommended with full software stack; 3 is the practical ceiling before resource exhaustion",
+    "chip": "Apple Silicon (16GB example)",
+    "source_url": "https://dev.to/amitrix/how-many-claude-code-sessions-can-and-should-you-run-simultaneously-72k",
+    "source_date": "2026-08-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "MLX vs llama.cpp context window performance",
+    "value": "MLX 3x faster than llama.cpp until context hits 40K tokens",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://pub.towardsai.net/apples-mlx-runs-local-llms-3x-faster-than-llama-cpp-until-your-context-hits-40k-715ec441afbb",
+    "source_date": "2026-06-30",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Agent workload bottleneck vs synthetic benchmarks",
+    "value": "For agent-style workloads with large context windows, prefill speed is the bottleneck; CUDA hardware retains advantage",
+    "chip": "M5 (applies to all Apple Silicon)",
+    "source_url": "https://contracollective.com/blog/m5-ultra-local-ai-inference-mlx-2026/",
+    "source_date": "2026-08-28",
+    "confidence": "high"
+  }
+]
