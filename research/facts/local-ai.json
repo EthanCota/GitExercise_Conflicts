@@ -1,0 +1,242 @@
+[
+  {
+    "fact": "M3 Ultra memory bandwidth",
+    "value": "819 GB/s",
+    "chip": "M3 Ultra (28-core CPU, 60-core or 80-core GPU)",
+    "source_url": "https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/",
+    "source_date": "2025-03-12",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max base configuration memory bandwidth",
+    "value": "410 GB/s",
+    "chip": "M4 Max (14-core CPU, 32-core GPU)",
+    "source_url": "https://9to5mac.com/2024/10/30/m4-max-chip-has-16-core-cpu-40-core-gpu-and-35-increase-in-memory-bandwidth/",
+    "source_date": "2024-10-30",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max high-end configuration memory bandwidth",
+    "value": "546 GB/s",
+    "chip": "M4 Max (16-core CPU, 40-core GPU)",
+    "source_url": "https://9to5mac.com/2024/10/30/m4-max-chip-has-16-core-cpu-40-core-gpu-and-35-increase-in-memory-bandwidth/",
+    "source_date": "2024-10-30",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Max base configuration memory bandwidth",
+    "value": "460 GB/s",
+    "chip": "M5 Max (18-core CPU, base GPU config)",
+    "source_url": "https://www.apple.com/mac-studio/specs/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Max high-end configuration memory bandwidth",
+    "value": "614 GB/s",
+    "chip": "M5 Max (18-core CPU, 40-core GPU)",
+    "source_url": "https://www.apple.com/mac-studio/specs/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra memory bandwidth",
+    "value": "1.2 TB/s (1200 GB/s)",
+    "chip": "M5 Ultra (36-core CPU, 80-core GPU, 32-core Neural Engine)",
+    "source_url": "https://fstoppers.com/gear/apples-new-mac-studio-gets-m5-ultra-512-gb-memory-and-thunderbolt-5-904270",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M5 Ultra AI compute relative performance vs M3 Ultra",
+    "value": "4.3x peak AI compute performance",
+    "chip": "M5 Ultra vs M3 Ultra",
+    "source_url": "https://www.engadget.com/2243405/apple-m5-ultra-with-80-core-gpu-ai-models-8k-video/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "M4 Max on Llama 3 70B Q4_K_M tokens per second",
+    "value": "12.5 tok/s",
+    "chip": "M4 Max",
+    "source_url": "https://markaicode.com/benchmarks/llamacpp-m4-max-benchmark/",
+    "source_date": "2024-11-01",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M5 Max on Llama 3 70B Q4 tokens per second range",
+    "value": "25-32 tok/s",
+    "chip": "M5 Max",
+    "source_url": "https://localaimaster.com/blog/apple-silicon-ai-buying-guide",
+    "source_date": "2026-08-20",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M3 Ultra on DeepSeek R1 Q4 prompt processing speed",
+    "value": "189.462 tokens/sec",
+    "chip": "M3 Ultra (512GB)",
+    "source_url": "https://dev.to/someoddcodeguy/running-deepseek-r1-0528-q4km-and-mlx-4-bit-on-a-mac-studio-m3-le4",
+    "source_date": "2025-05-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M3 Ultra on DeepSeek R1 Q4 generation speed",
+    "value": "11.154 tokens/sec",
+    "chip": "M3 Ultra (512GB)",
+    "source_url": "https://dev.to/someoddcodeguy/running-deepseek-r1-0528-q4km-and-mlx-4-bit-on-a-mac-studio-m3-le4",
+    "source_date": "2025-05-28",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M3 Ultra MLX on 8-bit quantization reported benchmark",
+    "value": "80+ tok/s",
+    "chip": "M3 Ultra (512GB)",
+    "source_url": "https://www.sitepoint.com/local-llms-apple-silicon-mac-2026/",
+    "source_date": "2026-03-01",
+    "confidence": "low"
+  },
+  {
+    "fact": "Llama 3 70B FP16 memory requirement",
+    "value": "140 GB",
+    "chip": "Universal (memory footprint)",
+    "source_url": "https://blog.easecloud.io/ai-cloud/run-70b-models-on-consumer-gpus/",
+    "source_date": "2026-01-15",
+    "confidence": "high"
+  },
+  {
+    "fact": "Llama 3 70B Q4_K_M memory requirement",
+    "value": "35-40 GB",
+    "chip": "Universal (memory footprint)",
+    "source_url": "https://www.sitepoint.com/vram-requirements-70b-models-16gb-gpu-minimum-2026/",
+    "source_date": "2026-02-01",
+    "confidence": "high"
+  },
+  {
+    "fact": "Llama 3 70B Q8 memory requirement",
+    "value": "70 GB",
+    "chip": "Universal (memory footprint)",
+    "source_url": "https://blog.easecloud.io/ai-cloud/run-70b-models-on-consumer-gpus/",
+    "source_date": "2026-01-15",
+    "confidence": "high"
+  },
+  {
+    "fact": "Llama 3.1 70B AWQ INT4 memory requirement",
+    "value": "35 GB",
+    "chip": "Universal (memory footprint)",
+    "source_url": "https://abhinand05.medium.com/self-hosting-llama-3-1-70b-or-any-70b-llm-affordably-2bd323d72f8d",
+    "source_date": "2024-12-01",
+    "confidence": "high"
+  },
+  {
+    "fact": "DeepSeek R1 671B FP8 model weight memory",
+    "value": "671 GB",
+    "chip": "Universal (memory footprint)",
+    "source_url": "https://www.hivenet.com/post/deepseek-r1-model-sizes-ram-vram-requirements",
+    "source_date": "2026-02-10",
+    "confidence": "high"
+  },
+  {
+    "fact": "DeepSeek R1 671B AWQ 4-bit memory requirement",
+    "value": "335 GB (weights) + 37 GB (activated params)",
+    "chip": "Universal (memory footprint)",
+    "source_url": "https://www.hivenet.com/post/deepseek-r1-model-sizes-ram-vram-requirements",
+    "source_date": "2026-02-10",
+    "confidence": "medium"
+  },
+  {
+    "fact": "DeepSeek R1 671B Q8_0 GGUF on 256GB system with 32K context",
+    "value": "220 GB RAM used",
+    "chip": "CPU-only 256GB system",
+    "source_url": "https://github.com/ollama/ollama/issues/8667",
+    "source_date": "2026-01-15",
+    "confidence": "medium"
+  },
+  {
+    "fact": "MLX framework speed advantage over llama.cpp on M5",
+    "value": "30-40% faster",
+    "chip": "M5-generation (M5 Max/M5 Ultra)",
+    "source_url": "https://yage.ai/share/mlx-apple-silicon-en-20260331.html",
+    "source_date": "2026-03-31",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Ollama runtime switch to MLX backend",
+    "value": "Ollama 0.19+ switched from llama.cpp Metal to MLX",
+    "chip": "Apple Silicon",
+    "source_url": "https://yage.ai/share/mlx-apple-silicon-en-20260331.html",
+    "source_date": "2026-03-30",
+    "confidence": "high"
+  },
+  {
+    "fact": "MLX fine-tuning and multi-model capabilities in 2026",
+    "value": "Supports distributed inference, fine-tuning (CLI/Python/Swift/C++), multi-model serving over Thunderbolt 5",
+    "chip": "Apple Silicon (M3+)",
+    "source_url": "https://www.kdnuggets.com/fine-tuning-language-models-on-apple-silicon-with-mlx",
+    "source_date": "2026-04-15",
+    "confidence": "high"
+  },
+  {
+    "fact": "MLX speculative decoding with native MTP on MacBook",
+    "value": "18.3 tokens/sec on 27B model with MTPLX framework",
+    "chip": "MacBook with M5 (inferred from May 2026 date)",
+    "source_url": "https://medium.com/@vinoth.lingam333/i-got-18-tok-s-from-a-27b-model-on-a-macbook-mlx-native-mtp-speculative-decoding-on-apple-5e1211a06d0c",
+    "source_date": "2026-05-15",
+    "confidence": "low"
+  },
+  {
+    "fact": "M5 Max runs 70B models at inference speed",
+    "value": "Llama 3.3 70B at 30+ tok/s",
+    "chip": "Mac Studio M5 Max",
+    "source_url": "https://blog.starmorph.com/blog/apple-silicon-llm-inference-optimization-guide",
+    "source_date": "2026-07-10",
+    "confidence": "medium"
+  },
+  {
+    "fact": "32GB Mac runs 30B MoE models distributed inference speed",
+    "value": "~100 tokens/sec",
+    "chip": "Apple Silicon (32GB M5+)",
+    "source_url": "https://www.kunalganglani.com/blog/run-local-agentic-ai-mac-mlx",
+    "source_date": "2026-06-20",
+    "confidence": "low"
+  },
+  {
+    "fact": "64GB Mac runs 70B models at usable inference speed",
+    "value": "Usable speeds (specific range not stated)",
+    "chip": "Apple Silicon (64GB M5+)",
+    "source_url": "https://www.kunalganglani.com/blog/run-local-agentic-ai-mac-mlx",
+    "source_date": "2026-06-20",
+    "confidence": "low"
+  },
+  {
+    "fact": "M5 Ultra Neural Engine configuration",
+    "value": "32-core Neural Engine with Neural Accelerators in each GPU core",
+    "chip": "M5 Ultra",
+    "source_url": "https://www.engadget.com/2243405/apple-m5-ultra-with-80-core-gpu-ai-models-8k-video/",
+    "source_date": "2026-08-25",
+    "confidence": "high"
+  },
+  {
+    "fact": "Qwen 72B memory footprint FP16",
+    "value": "144 GB",
+    "chip": "Universal (memory footprint)",
+    "source_url": "https://willitrunai.com/blog/qwen-3-6-27b-vram-requirements",
+    "source_date": "2026-04-10",
+    "confidence": "medium"
+  },
+  {
+    "fact": "Qwen 35B Q4 quantization memory requirement",
+    "value": "~20 GB",
+    "chip": "Universal (memory footprint)",
+    "source_url": "https://www.compute-market.com/blog/qwen-3-6-local-hardware-guide-2026",
+    "source_date": "2026-03-20",
+    "confidence": "medium"
+  },
+  {
+    "fact": "M4 Max vs M4 Pro memory bandwidth relative advantage",
+    "value": "2.3x memory bandwidth increase drives 2x+ inference speedup",
+    "chip": "M4 Max vs M4 Pro",
+    "source_url": "https://blog.starmorph.com/blog/apple-silicon-llm-inference-optimization-guide",
+    "source_date": "2026-07-10",
+    "confidence": "medium"
+  }
+]
