@@ -1,0 +1,93 @@
+{
+  "run_at_utc": "2026-08-28T00:49:57.988014+00:00",
+  "targets": {
+    "mac_studio": {
+      "url": "https://www.apple.com/mac-studio/specs/",
+      "final_url": "https://www.apple.com/mac-studio/specs/",
+      "status": null,
+      "fetch_error": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /mac-studio/specs/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "bytes": 0,
+      "script_extractable": false,
+      "reason": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /mac-studio/specs/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "fields_found": [],
+      "parsed": {}
+    },
+    "mac_mini": {
+      "url": "https://www.apple.com/mac-mini/specs/",
+      "final_url": "https://www.apple.com/mac-mini/specs/",
+      "status": null,
+      "fetch_error": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /mac-mini/specs/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "bytes": 0,
+      "script_extractable": false,
+      "reason": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /mac-mini/specs/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "fields_found": [],
+      "parsed": {}
+    },
+    "macbook_pro": {
+      "url": "https://www.apple.com/macbook-pro/specs/",
+      "final_url": "https://www.apple.com/macbook-pro/specs/",
+      "status": null,
+      "fetch_error": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /macbook-pro/specs/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "bytes": 0,
+      "script_extractable": false,
+      "reason": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /macbook-pro/specs/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "fields_found": [],
+      "parsed": {}
+    },
+    "macbook_air": {
+      "url": "https://www.apple.com/macbook-air/specs/",
+      "final_url": "https://www.apple.com/macbook-air/specs/",
+      "status": null,
+      "fetch_error": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /macbook-air/specs/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "bytes": 0,
+      "script_extractable": false,
+      "reason": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /macbook-air/specs/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "fields_found": [],
+      "parsed": {}
+    },
+    "mac_studio_buy": {
+      "url": "https://www.apple.com/shop/buy-mac/mac-studio",
+      "final_url": "https://www.apple.com/shop/buy-mac/mac-studio",
+      "status": null,
+      "fetch_error": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /shop/buy-mac/mac-studio (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "bytes": 0,
+      "script_extractable": false,
+      "reason": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /shop/buy-mac/mac-studio (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "fields_found": [],
+      "parsed": {}
+    },
+    "mac_mini_buy": {
+      "url": "https://www.apple.com/shop/buy-mac/mac-mini",
+      "final_url": "https://www.apple.com/shop/buy-mac/mac-mini",
+      "status": null,
+      "fetch_error": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /shop/buy-mac/mac-mini (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "bytes": 0,
+      "script_extractable": false,
+      "reason": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /shop/buy-mac/mac-mini (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "fields_found": [],
+      "parsed": {}
+    },
+    "macbook_pro_buy": {
+      "url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+      "final_url": "https://www.apple.com/shop/buy-mac/macbook-pro",
+      "status": null,
+      "fetch_error": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /shop/buy-mac/macbook-pro (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "bytes": 0,
+      "script_extractable": false,
+      "reason": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /shop/buy-mac/macbook-pro (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "fields_found": [],
+      "parsed": {}
+    },
+    "macbook_air_buy": {
+      "url": "https://www.apple.com/shop/buy-mac/macbook-air",
+      "final_url": "https://www.apple.com/shop/buy-mac/macbook-air",
+      "status": null,
+      "fetch_error": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /shop/buy-mac/macbook-air (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "bytes": 0,
+      "script_extractable": false,
+      "reason": "ProxyError: HTTPSConnectionPool(host='www.apple.com', port=443): Max retries exceeded with url: /shop/buy-mac/macbook-air (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "fields_found": [],
+      "parsed": {}
+    }
+  }
+}
