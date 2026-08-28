@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "generated_utc": "2026-08-28",
+    "mission": "Deterministic-first spec extraction for an Apple hardware capability study.",
+    "extraction_pipeline": [
+      "1. scripts/extract_specs.py attempted a direct script fetch (requests, HTTPS_PROXY-aware, CA bundle /root/.ccr/ca-bundle.crt) against apple.com spec/shop pages.",
+      "2. Every apple.com and support.apple.com host was rejected at the egress-proxy CONNECT layer with HTTP 403 (organization policy denial, confirmed twice: raw curl/requests via the script, and independently via the WebFetch tool which returned EGRESS_BLOCKED for www.apple.com and support.apple.com). Per proxy policy this was not retried or routed around.",
+      "3. Fallback per task step 2: WebSearch (Anthropic-hosted, not subject to this sandbox's egress allowlist) was used to retrieve and synthesize facts from indexed copies of Apple Newsroom / Apple Support pages and corroborating tech press (MacRumors, Macworld, 9to5Mac, AppleInsider, Tom's Hardware/Guide, TechCrunch, Daring Fireball, PetaPixel, ThePCEnthusiast, Technology.org). WebFetch on the underlying press URLs was also attempted for direct-page confirmation but every tested host (apple.com, support.apple.com, appleinsider.com, macworld.com, tomsguide.com, everymac.com, notebookcheck.net) returned EGRESS_BLOCKED, so no raw HTML could be parsed for this study; all figures below come from WebSearch's synthesis of indexed content.",
+      "4. Every field below is therefore extraction_method=\"llm-parse\", not \"script\" -- the script ran successfully but recovered zero fields because its only reachable targets (apple.com) are blocked in this environment. See research/fetch_report.json for the per-URL proxy denial log from the script run."
+    ],
+    "script_run_report": "research/fetch_report.json",
+    "script_result_summary": "0/8 apple.com targets script-extractable; all failed at proxy CONNECT with 403 (org egress policy), not a parsing failure.",
+    "global_extraction_method": "llm-parse (WebSearch synthesis of Apple Newsroom/Support content mirrored by tech press, dated 2026-08-25 through 2026-08-28)",
+    "verdict_macbook_pro_m5_max": "YES. A MacBook Pro with the M5 Max chip exists and is purchasable new from Apple today (2026-08-28). It launched March 3-11, 2026 (Apple Newsroom announcement, pre-orders March 4, availability March 11) in both 14-inch and 16-inch chassis, and remains Apple's current, unsuperseded MacBook Pro flagship as of this study -- it is the best laptop path actually buyable now. Its full max config: 128GB unified memory, up to 614GB/s memory bandwidth (40-core GPU config), up to 8TB SSD, with a fully loaded 16-inch (nano-texture, 128GB, 8TB) configuration reported at $7,349."
+  },
+  "machines": [
+    {
+      "chassis": "Mac mini (2026)",
+      "chip": "Apple M6",
+      "cpu_cores": {
+        "total": 12,
+        "breakdown": "2 'super' cores + 4 performance cores + 6 efficiency cores per press coverage of Apple's Aug 25, 2026 announcement",
+        "note": null
+      },
+      "gpu_cores": 12,
+      "neural_engine": {
+        "description": "First dual-Neural-Engine design: two 16-core Neural Engines (32 NE cores total), plus per-core Neural Accelerators in the GPU",
+        "cores_reported": 32
+      },
+      "memory_options": [16, 32],
+      "memory_max_gb": 32,
+      "memory_bandwidth_gbs": 170,
+      "storage_options_gb": [256, 512, 1024, 2048],
+      "storage_max_tb": 2,
+      "ports": [
+        "3x Thunderbolt 4 (rear)",
+        "2.5Gb Ethernet",
+        "Wi-Fi 7",
+        "Bluetooth 6"
+      ],
+      "ports_note": "Only ports explicitly confirmed in retrieved sources are listed; HDMI/USB-A/headphone-jack presence (carried over from the prior chassis generation) was not independently re-confirmed for the M6 refresh in the sources retrieved.",
+      "price_base_usd": 899,
+      "price_max_usd": 2229,
+      "price_max_config": "32GB memory, 2TB storage",
+      "availability": "Preorders opened Aug 25, 2026; ships/general availability Sept 22, 2026. Currently purchasable (preorder) as of 2026-08-28.",
+      "sources": [
+        {"url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/", "date": "2026-08-25", "field_coverage": ["chip", "cpu_cores", "gpu_cores", "neural_engine", "availability"]},
+        {"url": "https://techcrunch.com/2026/08/25/apples-latest-mac-mini-runs-on-a-new-m6-chip-and-starts-at-899/", "date": "2026-08-25", "field_coverage": ["price_base_usd", "memory_options", "storage_options_gb"]},
+        {"url": "https://daringfireball.net/2026/08/configurations_and_pricing_for_new_mac_minis_and_mac_studios", "date": "2026-08-25", "field_coverage": ["price_max_usd", "storage_options_gb", "memory_max_gb"]},
+        {"url": "https://www.tomshardware.com/desktops/mini-pcs/apple-price-hikes-continue-as-mac-mini-with-16gb-ram-and-256gb-is-now-usd899-1tb-storage-option-adds-usd500-to-entry-level-headless-system", "date": "2026-08-25", "field_coverage": ["storage_options_gb", "price_base_usd"]},
+        {"url": "https://9to5mac.com/2026/08/25/apple-announces-new-mac-mini-heres-everything-new/", "date": "2026-08-25", "field_coverage": ["ports", "memory_bandwidth_gbs"]}
+      ],
+      "extraction_method": "llm-parse"
+    },
+    {
+      "chassis": "Mac mini Pro (2026)",
+      "chip": "Apple M5 Pro",
+      "cpu_cores": {"total": 18, "note": "up to 18-core CPU"},
+      "gpu_cores": 20,
+      "neural_engine": {
+        "description": "16-core Neural Engine plus per-core Neural Accelerators in the GPU",
+        "cores_reported": 16
+      },
+      "memory_options": [24, 48, 64],
+      "memory_max_gb": 64,
+      "memory_bandwidth_gbs": 307,
+      "storage_options_gb": [512, 1024, 2048, 4096, 8192],
+      "storage_max_tb": 8,
+      "ports": [
+        "2x front USB-C",
+        "front headphone jack",
+        "3x rear Thunderbolt 5",
+        "rear HDMI",
+        "2.5Gb Ethernet (rear)"
+      ],
+      "price_base_usd": 1699,
+      "price_max_usd": 6699,
+      "price_max_config": "18-core CPU/20-core GPU, 64GB memory, 8TB storage",
+      "availability": "Preorders opened Aug 25, 2026; ships/general availability Sept 22, 2026. Currently purchasable (preorder) as of 2026-08-28.",
+      "sources": [
+        {"url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/", "date": "2026-08-25", "field_coverage": ["chip", "cpu_cores", "gpu_cores", "memory_max_gb", "memory_bandwidth_gbs", "ports", "availability"]},
+        {"url": "https://www.macworld.com/article/2964754/2026-mac-mini-m5-pro-design-specs-release-date.html", "date": "2026-08-25", "field_coverage": ["price_base_usd", "memory_options", "neural_engine"]},
+        {"url": "https://www.technology.org/2026/08/27/mac-mini-m5-pro-vs-m6-price/", "date": "2026-08-27", "field_coverage": ["price_max_usd"]},
+        {"url": "https://appleinsider.com/articles/26/03/03/what-you-get-from-a-maxed-out-macbook-pro-macbook-air-or-mac-mini", "date": "2026-08", "field_coverage": ["price_max_usd", "storage_options_gb"]}
+      ],
+      "extraction_method": "llm-parse"
+    },
+    {
+      "chassis": "Mac Studio (2026)",
+      "chip": "Apple M5 Max",
+      "cpu_cores": {"total": 18, "breakdown": "6 'super' cores + 12 performance cores"},
+      "gpu_cores": {"options": [32, 40], "max": 40, "note": "Neural Accelerators built into each GPU core"},
+      "neural_engine": {"description": "16-core Neural Engine", "cores_reported": 16},
+      "memory_options": [36, 48, 64, 128],
+      "memory_max_gb": 128,
+      "memory_bandwidth_gbs": {"32_core_gpu_config": 460, "40_core_gpu_config": 614, "max": 614},
+      "storage_options_gb": [512, 1024, 2048, 4096, 8192],
+      "storage_max_tb": 8,
+      "ports": [
+        "2x USB-C (front, USB 3.2 Gen 2 / 10Gb/s)",
+        "SDXC card slot, UHS-II (front)",
+        "4x Thunderbolt 5 (rear)",
+        "2x USB-A (rear)",
+        "HDMI 2.1 (rear)",
+        "10Gb Ethernet (rear)",
+        "headphone jack",
+        "Wi-Fi 7",
+        "Bluetooth 6"
+      ],
+      "price_base_usd": 2499,
+      "price_max_usd": null,
+      "price_max_note": "Base ($2,499) and the 512GB->8TB storage upcharge ($3,800) are confirmed, but no source located gives the exact total price for the fully maxed 128GB memory / 8TB storage / nano-texture configuration. Left null rather than summing an unconfirmed memory upcharge onto the confirmed storage upcharge. Apple's own configurator page for this exact SKU was found (https://www.apple.com/shop/buy-mac/mac-studio/m5-max-chip-18-core-cpu-40-core-gpu-128gb-memory-8tb-storage) but is on the egress-blocked apple.com domain and could not be fetched in this environment.",
+      "availability": "Preorders opened Aug 25, 2026; ships/general availability Sept 22, 2026. Currently purchasable (preorder) as of 2026-08-28.",
+      "sources": [
+        {"url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/", "date": "2026-08-25", "field_coverage": ["chip", "cpu_cores", "gpu_cores", "neural_engine", "memory_options", "memory_bandwidth_gbs", "availability", "price_base_usd"]},
+        {"url": "https://www.macworld.com/article/2973459/2026-mac-studio-m5-release-date-specs-price-rumors.html", "date": "2026-08-25", "field_coverage": ["memory_bandwidth_gbs", "memory_options", "cpu_cores"]},
+        {"url": "https://www.redsharknews.com/mac-studio-m5-max-m5-ultra-price-specs", "date": "2026-08-25", "field_coverage": ["price_base_usd", "memory_max_gb"]},
+        {"url": "https://thepcenthusiast.com/mac-studio-m5-max-m5-ultra-price-specs/", "date": "2026-08-25", "field_coverage": ["ports", "storage_options_gb", "price_base_usd"]},
+        {"url": "https://appleinsider.com/articles/26/08/25/mac-studio-gets-update-to-m5-max-and-m5-ultra", "date": "2026-08-25", "field_coverage": ["storage_options_gb", "price_max_note"]}
+      ],
+      "extraction_method": "llm-parse"
+    },
+    {
+      "chassis": "Mac Studio (2026)",
+      "chip": "Apple M5 Ultra",
+      "cpu_cores": {"total": 36, "breakdown": "12 'super' cores + 24 performance cores"},
+      "gpu_cores": {"max": 80, "note": "Neural Accelerators built into each GPU core; first time Neural Accelerators appear on an Ultra chip"},
+      "neural_engine": {"description": "32-core Neural Engine (double the Max chip's 16 cores)", "cores_reported": 32},
+      "memory_options": [96, 256, 512],
+      "memory_max_gb": 512,
+      "memory_bandwidth_gbs": 1229,
+      "memory_bandwidth_note": "Reported publicly as '1.2TB/s'; 1229 GB/s used here as the standard binary-GB/s figure for that spec generation, but the exact decimal was not independently re-derived from a primary Apple spec table in this environment (apple.com blocked) -- treat as approximate pending direct confirmation.",
+      "storage_options_gb": [1024, 2048, 4096, 8192, 16384],
+      "storage_max_tb": 16,
+      "ports": [
+        "2x Thunderbolt 5 (front, up to 120Gb/s)",
+        "SDXC card slot, UHS-II (front)",
+        "4x Thunderbolt 5 (rear)",
+        "2x USB-A (rear)",
+        "HDMI 2.1 (rear)",
+        "10Gb Ethernet (rear)",
+        "headphone jack",
+        "Wi-Fi 7",
+        "Bluetooth 6"
+      ],
+      "price_base_usd": 5499,
+      "price_max_usd": 18299,
+      "price_max_config": "256GB memory, 16TB storage -- this is the highest configuration currently orderable/priced. The true maximum (512GB memory, 16TB storage) is NOT priced yet: 512GB-memory units do not ship until 'late October 2026' and Apple has not published pricing for that tier as of 2026-08-28. Press estimates (based on the $4,000 step from 96GB->256GB and the $7,500 step from 1TB->16TB storage) suggest the full 512GB/16TB config will exceed $20,000, but this is an estimate, not a published price -- do not treat it as verified.",
+      "availability": "Preorders opened Aug 25, 2026 for configurations up to 256GB memory; ships Sept 22, 2026. The 512GB-memory configuration is announced but not yet orderable/priced -- it ships late October 2026.",
+      "sources": [
+        {"url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/", "date": "2026-08-25", "field_coverage": ["chip", "cpu_cores", "gpu_cores", "neural_engine", "memory_options", "price_base_usd", "availability"]},
+        {"url": "https://www.macworld.com/article/3220024/apple-announces-the-m5-ultra-mac-studio-with-up-to-512gb-of-ram.html", "date": "2026-08-25", "field_coverage": ["memory_max_gb", "memory_bandwidth_gbs", "availability"]},
+        {"url": "https://appleinsider.com/articles/26/08/25/you-can-spend-18299-on-a-mac-studio-today-or-more-in-october", "date": "2026-08-25", "field_coverage": ["price_max_usd", "price_max_config", "availability"]},
+        {"url": "https://www.macrumors.com/2026/08/25/mac-studio-m5-ultra-512gb-ram-october/", "date": "2026-08-25", "field_coverage": ["availability", "price_max_config"]},
+        {"url": "https://fstoppers.com/gear/apples-new-mac-studio-gets-m5-ultra-512-gb-memory-and-thunderbolt-5-904270", "date": "2026-08-25", "field_coverage": ["storage_options_gb", "ports"]}
+      ],
+      "extraction_method": "llm-parse"
+    },
+    {
+      "chassis": "MacBook Pro 14-inch (2026)",
+      "chip": "Apple M5 Max",
+      "cpu_cores": {"total": 18, "breakdown": "6 'super' cores + 12 performance cores"},
+      "gpu_cores": {"options": [32, 40], "max": 40},
+      "neural_engine": {"description": "16-core Neural Engine", "cores_reported": 16},
+      "memory_options": [36, 48, 64, 128],
+      "memory_max_gb": 128,
+      "memory_bandwidth_gbs": {"32_core_gpu_config": 460, "40_core_gpu_config": 614, "max": 614},
+      "storage_options_gb": [2048, 4096, 8192],
+      "storage_max_tb": 8,
+      "storage_note": "Base storage doubled to 2TB for this generation; 8TB max reported consistently for the M5 Max tier across both chassis sizes, but the 14-inch-specific top storage SKU was not independently re-confirmed (the confirmed Apple buy-URL for the 128GB/8TB SKU found in search was for the 16-inch chassis).",
+      "ports": [
+        "3x Thunderbolt 5",
+        "MagSafe 3",
+        "SDXC card slot",
+        "HDMI (up to 8K)",
+        "3.5mm headphone jack",
+        "Wi-Fi 7",
+        "Bluetooth 6"
+      ],
+      "price_base_usd": 3599,
+      "price_max_usd": null,
+      "price_max_note": "Confirmed max-config price of $7,349 (see below) was reported specifically for a 16-inch configuration; no 14-inch-specific maxed total was found, so left null rather than assumed equal to the 16-inch figure.",
+      "availability": "Announced/pre-ordered March 4, 2026; available since March 11, 2026. Currently purchasable new from Apple as of 2026-08-28 -- this is Apple's current, unsuperseded MacBook Pro flagship chip tier.",
+      "sources": [
+        {"url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/", "date": "2026-03-03", "field_coverage": ["chip", "cpu_cores", "gpu_cores", "neural_engine", "memory_options", "availability", "ports"]},
+        {"url": "https://www.macrumors.com/2026/03/03/apple-unveils-macbook-pro-with-m5-pro-and-m5-max-chips-with-neural-accelerators/", "date": "2026-03-03", "field_coverage": ["memory_bandwidth_gbs", "storage_options_gb", "price_base_usd"]},
+        {"url": "https://www.macworld.com/article/2942089/macbook-pro-m5-pro-max-release-specs-price.html", "date": "2026-03", "field_coverage": ["price_base_usd", "availability"]},
+        {"url": "https://www.tomsguide.com/computing/macbooks/macbook-pro-m5-pro-and-m5-max-announced-price-release-date-specs-and-more", "date": "2026-03-03", "field_coverage": ["ports", "cpu_cores", "gpu_cores"]}
+      ],
+      "extraction_method": "llm-parse"
+    },
+    {
+      "chassis": "MacBook Pro 16-inch (2026)",
+      "chip": "Apple M5 Max",
+      "cpu_cores": {"total": 18, "breakdown": "6 'super' cores + 12 performance cores"},
+      "gpu_cores": {"options": [32, 40], "max": 40},
+      "neural_engine": {"description": "16-core Neural Engine", "cores_reported": 16},
+      "memory_options": [36, 48, 64, 128],
+      "memory_max_gb": 128,
+      "memory_bandwidth_gbs": {"32_core_gpu_config": 460, "40_core_gpu_config": 614, "max": 614},
+      "storage_options_gb": [2048, 4096, 8192],
+      "storage_max_tb": 8,
+      "ports": [
+        "3x Thunderbolt 5 (supports up to four 6K@60Hz or 4K@144Hz displays)",
+        "MagSafe 3",
+        "SDXC card slot",
+        "HDMI (up to 8K)",
+        "3.5mm headphone jack",
+        "Wi-Fi 7",
+        "Bluetooth 6"
+      ],
+      "price_base_usd": 3899,
+      "price_max_usd": 7349,
+      "price_max_config": "128GB memory, 8TB storage, Space Black, nano-texture display (Apple's confirmed configurator SKU: apple.com/shop/buy-mac/macbook-pro/16-inch-space-black-nano-texture-display-apple-m5-max-chip-18-core-cpu-40-core-gpu-128gb-memory-8tb-storage)",
+      "availability": "Announced/pre-ordered March 4, 2026; available since March 11, 2026. Currently purchasable new from Apple as of 2026-08-28 -- this is the best laptop path actually buyable now (no newer MacBook Pro chip tier has superseded M5 Max as of this study date).",
+      "sources": [
+        {"url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/", "date": "2026-03-03", "field_coverage": ["chip", "cpu_cores", "gpu_cores", "neural_engine", "memory_options", "availability", "ports"]},
+        {"url": "https://appleinsider.com/articles/26/03/03/m5-macbook-pro-maxxed-out-will-cost-you-7349-but-could-have-been-a-lot-worse", "date": "2026-03-03", "field_coverage": ["price_max_usd", "price_max_config"]},
+        {"url": "https://appleinsider.com/articles/26/03/03/how-m5-pro-and-m5-max-push-macbook-pro-into-high-bandwidth-ai-era", "date": "2026-03-03", "field_coverage": ["memory_bandwidth_gbs"]},
+        {"url": "https://www.tomsguide.com/computing/macbooks/macbook-pro-m5-pro-and-m5-max-announced-price-release-date-specs-and-more", "date": "2026-03-03", "field_coverage": ["price_base_usd", "ports"]},
+        {"url": "https://www.tomshardware.com/laptops/macbooks/apple-macbook-pro-14-inch-m5-max-2026-review", "date": "2026", "field_coverage": ["cpu_cores", "gpu_cores"]}
+      ],
+      "extraction_method": "llm-parse"
+    },
+    {
+      "chassis": "MacBook Air 13-inch (2025, baseline)",
+      "chip": "Apple M4",
+      "cpu_cores": {"total": 10, "breakdown": "4 performance cores + 6 efficiency cores"},
+      "gpu_cores": {"options": [8, 10], "max": 10, "note": "Entry-level SKU ships with 8-core GPU; mid/high SKUs get 10-core GPU"},
+      "neural_engine": {"description": "16-core Neural Engine", "cores_reported": 16},
+      "memory_options": [16, 24, 32],
+      "memory_max_gb": 32,
+      "memory_bandwidth_gbs": 120,
+      "storage_options_gb": [256, 512, 1024, 2048],
+      "storage_max_tb": 2,
+      "ports": [
+        "2x Thunderbolt/USB 4 (left side)",
+        "MagSafe 3",
+        "3.5mm headphone jack",
+        "Wi-Fi 6E",
+        "Bluetooth 5.3"
+      ],
+      "ports_note": "Ports list reflects the well-documented M4 MacBook Air generation layout carried through press coverage; not re-verified against a primary Apple page in this run because apple.com/support.apple.com were egress-blocked.",
+      "price_base_usd": 999,
+      "price_max_usd": null,
+      "price_max_note": "No source located gives Apple's official total for the fully maxed 32GB/2TB/10-core-GPU configuration. An unverified arithmetic estimate (base $999 + ~$400 for 32GB + ~$800 for 2TB + GPU-tier delta) would land roughly $2,200-$2,400, but this is a guess, not a sourced figure, so left null per instructions.",
+      "availability": "Launched March 2025 (13-inch and 15-inch chassis); still Apple's current MacBook Air generation and purchasable new as of 2026-08-28 (baseline entry for this study, included for cross-machine comparison, not part of the Aug 2026 launch wave).",
+      "sources": [
+        {"url": "https://www.apple.com/newsroom/2025/03/apple-introduces-the-new-macbook-air-with-the-m4-chip-and-a-sky-blue-color/", "date": "2025-03", "field_coverage": ["chip", "cpu_cores", "gpu_cores", "price_base_usd", "availability"]},
+        {"url": "https://www.macworld.com/article/2303200/m4-macbook-air-design-price-specs-release.html", "date": "2025-03", "field_coverage": ["memory_options", "storage_options_gb", "price_base_usd"]},
+        {"url": "https://www.tomshardware.com/laptops/macbooks/macbook-air-m4-2025-review", "date": "2025", "field_coverage": ["neural_engine", "memory_bandwidth_gbs", "cpu_cores"]},
+        {"url": "https://everymac.com/systems/apple/macbook-air/specs/macbook-air-m4-10-core-cpu-10-core-gpu-13-2025-specs.html", "date": "2025", "field_coverage": ["gpu_cores", "storage_options_gb"]}
+      ],
+      "extraction_method": "llm-parse"
+    }
+  ]
+}
