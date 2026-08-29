@@ -1,0 +1,218 @@
+[
+  {
+    "topic": "Legitimate Spend - Everyday Purchases",
+    "fact": "Primary method to meet minimum spend is using card for everyday purchases (groceries, gas, dining, travel, home improvements) and bulk household items",
+    "value": "Legitimate, no fees",
+    "source_url": "https://upgradedpoints.com/credit-cards/credit-card-minimum-spend-requirements/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Legitimate Spend - Rent Payment",
+    "fact": "Bilt Mastercard allows no-fee rent/mortgage payment earning 1.25x points; no transaction fee on rent with Bilt card; alternative payment methods: ACH $1.95 fee, international card 4% fee (min $3)",
+    "value": "0% fee on Bilt card, 1.95% ACH alternative, 4% international card",
+    "source_url": "https://money.usnews.com/credit-cards/articles/is-bilt-the-best-credit-card-to-pay-rent",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Legitimate Spend - Federal Tax Payments",
+    "fact": "Two authorized IRS processors in 2026: Pay1040 (1.75% fee, $2.50 min) and ACI Payments (1.85% fee, $2.50 min). On $3,000 tax bill: $52-55 in fees. On $10,000: $175-185. TurboTax charges 2.49%",
+    "value": "1.75%-1.85% processor fee, $2.50 minimum; TurboTax 2.49%",
+    "source_url": "https://www.doctorofcredit.com/a-complete-guide-to-paying-your-taxes-with-a-credit-card/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Legitimate Spend - Charitable Donations",
+    "fact": "Timing charitable donations during minimum spend window enables progress toward bonus while receiving tax deduction",
+    "value": "No fee, tax-deductible",
+    "source_url": "https://upgradedpoints.com/credit-cards/credit-card-minimum-spend-requirements/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Legitimate Spend - Business Expenses",
+    "fact": "Legitimate side business or freelance expenses (software, supplies, advertising) can be charged to card during minimum spend period",
+    "value": "No fee, business-deductible",
+    "source_url": "https://upgradedpoints.com/credit-cards/credit-card-minimum-spend-requirements/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Legitimate Spend - Plastiq Payment Service",
+    "fact": "Plastiq service allows payment of non-card-accepting vendors with credit card; charges up to 2.99% service fee plus up to $39 for international wire transfers",
+    "value": "2.99% service fee + $39 international wire",
+    "source_url": "https://upgradedpoints.com/credit-cards/credit-card-minimum-spend-requirements/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Legitimate Spend - Group Expenses",
+    "fact": "Volunteer to pay group expenses (dinners, trips, outings) to accelerate spending progress",
+    "value": "No fee, reimbursement-based",
+    "source_url": "https://upgradedpoints.com/credit-cards/credit-card-minimum-spend-requirements/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Fees Math - Tax Payment Break-Even",
+    "fact": "Tax payment via credit card only profitable if card earns >1.75-1.85% back on transaction; otherwise fees eliminate rewards value",
+    "value": "Need >1.75-1.85% card return to break even",
+    "source_url": "https://www.nerdwallet.com/travel/learn/paying-taxes-with-credit-card-for-points",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Risk - Amex Bonus Clawback Triggers",
+    "fact": "Amex claws back bonuses if: (1) card cancelled/downgraded within 12 months of opening, (2) returns/refunds drop spending below requirement, (3) suspicious patterns like gift card purchases or large returns after bonus",
+    "value": "Clawback scenarios: 12-month closure, returns below threshold, suspicious patterns",
+    "source_url": "https://frequentmiler.com/how-to-avoid-amex-clawbacks/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Risk - Amex Clawback Consequences",
+    "fact": "Amex has taken Membership Rewards balances into the negative during clawbacks; terms allow for closure of other Amex accounts as disciplinary action",
+    "value": "Negative balance clawbacks, account closure risk",
+    "source_url": "https://www.fool.com/money/credit-cards/articles/3-reasons-an-issuer-may-claw-back-your-sign-up-bonus/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Risk - Amex Churner Restrictions 2026",
+    "fact": "Amex added terms to Delta SkyMiles cards (personal) specifying bonus withholding/clawback for cardholders with history of canceling/downgrading Amex cards within one year; likely to spread to all Amex cards",
+    "value": "History of 12-month cancellations now triggers official policy",
+    "source_url": "https://thriftytraveler.com/news/credit-card/amex-adds-terms-bonus-clawback/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Risk - Amex Account Shutdowns 2026",
+    "fact": "March 2026 wave of Amex shutdowns targeting resale activity, buying groups, large volumes of goods for resale, international spend. Amex RAT (Rewards Abuse Team) uses ML/AI to identify suspicious accounts",
+    "value": "Resale, buying groups, international bulk spend flagged",
+    "source_url": "https://travelupdate.com/amex-account-shutdowns-2026/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Risk - Chase Shutdown Triggers",
+    "fact": "Chase shuts down accounts for: large spend volume (e.g., $1.2M in one month), Chase Offer return abuse, self-swiping, Lyft abuse, selling points boosts, hacked signup links. Chase has zero tolerance for manufactured spending in 2026",
+    "value": "High volume, offer abuse, suspicious patterns trigger shutdown",
+    "source_url": "https://www.doctorofcredit.com/what-causes-chase-credit-card-shutdowns/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Risk - Manufactured Spending 2026",
+    "fact": "90% of previously profitable manufactured spending methods are dead/dying in 2026; remaining 10% require significant expertise, time, and risk tolerance; more risky, less profitable, more likely to trigger bank shutdowns than ever",
+    "value": "MS methods: 10% viable, 90% obsolete/detected",
+    "source_url": "https://cardclassroom.com/blog/manufactured-spending-what-to-avoid",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Credit Score - Hard Inquiry Impact",
+    "fact": "Single hard inquiry: 3-10 points off FICO (varies by profile). Inquiry effect lasts 12 months, then fades; stops affecting score after 24 months. Multiple inquiries: 3-8 points each, compound: 6 inquiries in 12 months = 25-45 point total loss",
+    "value": "1 inquiry: 3-10 pts (12 month effect); 6 in 12 months: 25-45 pts",
+    "source_url": "https://scorenerds.com/credit-scores/hard-inquiry-real-impact",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Credit Score - New Account Penalty",
+    "fact": "New account penalties: hard inquiry ~5 pts, new credit penalty 10-20 pts (15 avg for Fico 8), plus AAoA reduction. Net effect neutral within 3-6 months as account ages and reports clean payments",
+    "value": "Initial penalty: 15-25 pts total; recovery 3-6 months",
+    "source_url": "https://firstcard.app/learn/how-many-points-does-opening-a-new-account-drop-credit-score",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Credit Score - Average Age of Accounts Impact",
+    "fact": "AAoA is 15% of FICO, 9% of VantageScore. New account drops AAoA: thin file can see 1-3 point penalty, thick file 1-3 point penalty. Effect stabilizes within 3-6 months",
+    "value": "AAoA penalty: 1-3 pts; recovers in 3-6 months",
+    "source_url": "https://firstcard.app/learn/how-many-points-does-opening-a-new-account-drop-credit-score",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Credit Score - Utilization Ratio Impact",
+    "fact": "Utilization = 30% of FICO score (second most important after payment history). Reducing from 50% to 10% adds 20-50 points often within one billing cycle. Ideal: under 10%, excellent scores (800+) average under 3%. Monthly resets, fastest-moving factor",
+    "value": "30% of score; 20-50 pts for 50%→10% reduction; resets monthly",
+    "source_url": "https://stackeasy.ai/blog/best-credit-utilization-ratio-for-fico-score-2026",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Credit Score - Closing vs Downgrading Card",
+    "fact": "Closing card lowers score by reducing available credit (utilization increase) and shortening AAoA. Downgrading (product change) preserves account history, age, and limit with zero impact; preferred strategy to avoid annual fees",
+    "value": "Closing: negative impact; Downgrading: zero impact",
+    "source_url": "https://awardwallet.com/credit-cards/when-should-i-downgrade-a-credit-card/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Tax Treatment - Spend-Required Bonuses",
+    "fact": "Sign-up bonuses that require minimum spending are typically treated as rebates and not taxable income (offset purchase costs)",
+    "value": "Spend-required bonuses: typically NOT taxable",
+    "source_url": "https://money.usnews.com/credit-cards/articles/are-credit-card-rewards-taxable",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Tax Treatment - No-Spend Bonuses",
+    "fact": "Sign-up bonuses without spending requirement (e.g., $200 for account opening) are treated as miscellaneous income and taxable",
+    "value": "No-spend bonuses: TAXABLE as ordinary income",
+    "source_url": "https://money.usnews.com/credit-cards/articles/are-credit-card-rewards-taxable",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Tax Treatment - 1099-MISC Threshold 2026",
+    "fact": "Form 1099-MISC must be issued if taxable rewards total $600+ (2025 threshold), rising to $2,000 for 2026 tax year. However, all qualifying taxable income must be reported even without 1099 form",
+    "value": "2026 threshold: $2,000; reporting required regardless",
+    "source_url": "https://www.sofi.com/learn/content/are-credit-card-rewards-taxable/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Tax Treatment - Business Card Rewards",
+    "fact": "Business card bonuses with spending requirement treated as rebates, not taxable. Card issuers report non-purchase rewards $600+ (rising to $2,000 in 2026) on 1099-MISC. No 1099s issued for purchase-based cash back/points/miles as they're rebates",
+    "value": "Spend-based: not taxable; no-spend: reportable at $2k+ threshold",
+    "source_url": "https://ramp.com/blog/are-business-credit-card-rewards-taxable",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Debt/Interest - Average APR 2026",
+    "fact": "Average credit card APR in 2026: 19.35-24.94% depending on data source. Q2 2026: 20.94%. Excellent credit (740+): 17-21%. Good credit (670-739): 21-24%. Rates down from 2024 record of 21.76%",
+    "value": "Average: 19-25% APR; Excellent: 17-21%; Good: 21-24%",
+    "source_url": "https://www.forbes.com/advisor/credit-cards/average-credit-card-interest-rate/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Debt/Interest - Interest Wipes Out Value",
+    "fact": "If carrying balance at average 20% APR, interest cost quickly exceeds rewards value. Example: $5,000 balance at 20% = $1,000/year interest; need 2% cash back on $50,000 spend to break even on interest alone",
+    "value": "20% APR interest cost exceeds 1-2% rewards for most spenders",
+    "source_url": "https://www.nerdwallet.com/travel/learn/paying-taxes-with-credit-card-for-points",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  },
+  {
+    "topic": "Annual Fee - Retention Offers",
+    "fact": "Retention offers typically include statement credits, bonus points, or fee waivers. Success requires calling retention department and expressing dissatisfaction or intent to cancel. Spending a few minutes on phone with issuer is high ROI",
+    "value": "Common: $50-300 statement credits or equivalent points",
+    "source_url": "https://upgradedpoints.com/credit-cards/credit-card-retention-offers/",
+    "source_date": "2026-08-29",
+    "confidence": "medium"
+  },
+  {
+    "topic": "Annual Fee - Downgrade Paths",
+    "fact": "Most issuers offer product change to lower-tier or no-fee version in same family; preserves account history, credit limit, age; typically ineligible for welcome offer on downgraded card. Amex: 30-day refund window; Barclays: 60-day window",
+    "value": "30-60 day refund window; zero credit score impact",
+    "source_url": "https://upgradedpoints.com/credit-cards/credit-card-retention-offers/",
+    "source_date": "2026-08-29",
+    "confidence": "high"
+  }
+]
