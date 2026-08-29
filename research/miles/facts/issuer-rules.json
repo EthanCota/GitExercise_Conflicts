@@ -1,0 +1,170 @@
+[
+  {
+    "issuer": "Chase",
+    "rule": "5/24 rule",
+    "current_form": "Denies applications if applicant has opened 5+ personal credit cards (from any issuer) in past 24 months. Business cards (Chase Ink) do NOT count toward 5/24, but applicant must still be under 5/24 to be approved for business cards. Authorized user accounts count toward the limit. Clock starts on account open date, not closure date.",
+    "source_url": "https://financebuzz.com/chase-524-rule-explained",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Chase",
+    "rule": "Sapphire bonus eligibility",
+    "current_form": "48-month rule was eliminated as of January 22, 2026. Changed to once-per-lifetime per individual card product (Preferred and Reserve tracked separately). Can earn bonuses on both Preferred and Reserve even if currently holding both cards.",
+    "source_url": "https://www.asksebby.com/articles/chase-sapphire-bonus-eligibility-guide",
+    "source_date": "2026-01-22",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Chase",
+    "rule": "5/24 enforcement",
+    "current_form": "Strictly enforced as of January 29, 2026. Auto-denies applications before human review. Some data from early 2026 suggests Chase may be shifting toward pop-up model similar to bonus eligibility, but hard denials still common.",
+    "source_url": "https://pointalize.com/understanding-the-chase-5-24-rule-in-2026/",
+    "source_date": "2026-01",
+    "confidence": "High"
+  },
+  {
+    "issuer": "American Express",
+    "rule": "Once-per-lifetime bonus rule",
+    "current_form": "Welcome bonus can be earned once per card product in applicant's lifetime. No stated resetting period; historically interpreted as 7-year lifetime but some data suggests flexibility under 3 years. Applies to both personal and business products separately.",
+    "source_url": "https://onemileatatime.com/guides/amex-lifetime-rule/",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "American Express",
+    "rule": "1/5 card limit",
+    "current_form": "Maximum 5 American Express credit cards at any single time across personal and business products combined.",
+    "source_url": "https://militarymoneymanual.com/amex-pop-up/",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "American Express",
+    "rule": "2/90 application velocity",
+    "current_form": "Maximum 2 new American Express credit card approvals per 90-day period. Applies to both personal and business cards.",
+    "source_url": "https://creditpoints.cash/guides/amex-application-rules-explained-2026",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "American Express",
+    "rule": "Pop-up jail (bonus eligibility jail)",
+    "current_form": "When applying for Amex card, ineligible applicants see pop-up message warning that proceeding will not grant welcome offer. Triggered by frequent applications without holding cards long or earning genuine spending. Typical sentence: 60-120 days with behavior change (keeping cards, genuine spending). No published duration; some report 1+ year if behavior unchanged.",
+    "source_url": "https://militarymoneymanual.com/amex-pop-up/",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "American Express",
+    "rule": "Green/Gold/Platinum family rule",
+    "current_form": "Directional: opening Platinum disqualifies bonuses on Gold and Green. Opening Gold disqualifies bonus on Green but not Platinum. Optimal order: Green → Gold → Platinum.",
+    "source_url": "https://10xtravel.com/american-express-bonus-and-application-rules/",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Citibank",
+    "rule": "48-month bonus rule",
+    "current_form": "Welcome bonus eligible once per card product every 48 months. Clock starts when bonus POSTS to account, not when application approved or card opened. Applies to all Citi personal credit cards.",
+    "source_url": "https://cardcurator.ai/credit-card-rules/citi",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Citibank",
+    "rule": "1/8 velocity limit",
+    "current_form": "Maximum 1 new Citi credit card application approval per 8-day period. If declined for velocity, no hard inquiry processed.",
+    "source_url": "https://cardcurator.ai/credit-card-rules/citi",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Citibank",
+    "rule": "2/65 velocity limit",
+    "current_form": "Maximum 2 new Citi credit card application approvals per 65-day period. Works in combination with 1/8 rule.",
+    "source_url": "https://cardcurator.ai/credit-card-rules/citi",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Bank of America",
+    "rule": "2/3/4 velocity rule",
+    "current_form": "Maximum 2 cards in 30 days, 3 cards in 12 months, 4 cards in 24 months (all three limits apply simultaneously). Applies only to Bank of America credit cards. Business credit cards exempt. Auto-declines if any threshold crossed.",
+    "source_url": "https://cardocrat.com/learn/bank-of-america-application-rules/",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Capital One",
+    "rule": "Venture family 48-month rule",
+    "current_form": "Venture X and Venture cards combined into one family for 48-month bonus eligibility. Clock starts when bonus POSTS, not approval date. Moving 'down' the ladder (Venture X to Venture) triggers rule; moving 'up' does not. Business Venture X card exempt.",
+    "source_url": "https://travelfreely.com/new-capital-one-venture-cards-rules-what-you-need-to-know/",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Wells Fargo",
+    "rule": "6-month new card rule",
+    "current_form": "Cannot be approved for new Wells Fargo consumer credit card if opened one within last 6 months. Excludes Bilt Mastercard and Wells Fargo Signify Business Cash Card.",
+    "source_url": "https://www.fool.com/money/credit-cards/wells-fargo/guides/wells-fargo-card-application-rules/",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Wells Fargo",
+    "rule": "48-month introductory bonus rule",
+    "current_form": "Welcome bonus, intro APR, and fee waivers not eligible if received on same card product within past 48 months. Added August 2024. Clock starts on card OPEN date, not bonus post date. Allows bonuses on different card types within 48-month window.",
+    "source_url": "https://www.fool.com/money/credit-cards/wells-fargo/guides/wells-fargo-card-application-rules/",
+    "source_date": "2024-08",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Barclays",
+    "rule": "6/24 rule",
+    "current_form": "Loose/inconsistently enforced rule suggesting non-approval if 6+ cards opened with any issuer in past 24 months. Data shows approvals above 6/24 are common; rule not as hard as Chase 5/24.",
+    "source_url": "https://thriftytraveler.com/guides/credit-card/credit-card-application-rules/",
+    "source_date": "2026",
+    "confidence": "Medium"
+  },
+  {
+    "issuer": "Barclays",
+    "rule": "24-month bonus eligibility",
+    "current_form": "Can earn bonus on same card again if 24+ months since last bonus receipt.",
+    "source_url": "https://pointsnav.com/credit-cards/rules/barclay-6-24",
+    "source_date": "2026",
+    "confidence": "Medium"
+  },
+  {
+    "issuer": "US Bank",
+    "rule": "48-month bonus rule",
+    "current_form": "Welcome bonus not eligible if received on same personal card product within past 48 months. Business cards exempt.",
+    "source_url": "https://www.hustlermoneyblog.com/us-bank-credit-card-bonuses/",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Multi-issuer",
+    "rule": "Business card personal credit reporting",
+    "current_form": "Chase, American Express, Bank of America, Citi, Wells Fargo, US Bank: business credit cards do NOT report to personal credit bureaus (report only to commercial bureaus). Capital One and Discover: business cards DO report to personal credit bureaus. Notable exception: Capital One Spark Cash Plus and Venture X Business (charge cards) do not report routinely.",
+    "source_url": "https://www.stacking.capital/articles/business-credit-cards-that-dont-report-personal.html",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Multi-issuer",
+    "rule": "2026 enforcement escalation",
+    "current_form": "Issuers aggressively clawing back bonuses for non-genuine spending. Walmart discontinued Visa-funded money order sales at many locations (closed manufactured spending avenue). Chase enforcing 5/24 across all branded products. Amex extended once-per-lifetime language to Green and Gold cards (previously had looser rules).",
+    "source_url": "https://wealthlane.lovable.app/blog/credit-card-churning-still-worth-it-2026",
+    "source_date": "2026",
+    "confidence": "High"
+  },
+  {
+    "issuer": "Discover",
+    "rule": "Business card personal credit reporting",
+    "current_form": "Discover business credit cards report to personal credit bureaus, unlike most competitors. Affects credit utilization and 5/24-type calculations at issuers that look at personal bureau data.",
+    "source_url": "https://www.stacking.capital/articles/business-credit-cards-that-dont-report-personal.html",
+    "source_date": "2026",
+    "confidence": "High"
+  }
+]
